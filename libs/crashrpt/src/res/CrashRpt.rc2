@@ -1,0 +1,22 @@
+//
+// CRASHRPT.RC2 - resources Microsoft Visual C++ does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+	#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Add manually edited resources here...
+
+IDR_ENGLISH           RCDATA                          "C:\\game\\data\\texts\\English\\CrashRpt.ms"
+IDR_LANGTYPES         RCDATA                          "C:\\game\\data\\texts\\CrashRpt.types"
+IDR_1337              RCDATA                          "C:\\game\\data\\texts\\test\\CrashRpt.ms"
+//IDR_CHINESE           RCDATA                          "C:\\game\\data\\texts\\ChineseTraditional\\CrashRpt.ms"
+//IDR_KOREAN            RCDATA                          "C:\\game\\data\\texts\\Korean\\CrashRpt.ms"
+//IDR_JAPANESE          RCDATA                          "C:\\game\\data\\texts\\Japanese\\CrashRpt.ms"
+IDR_GERMAN            RCDATA                          "C:\\game\\data\\texts\\German\\CrashRpt.ms"
+IDR_FRENCH            RCDATA                          "C:\\game\\data\\texts\\French\\CrashRpt.ms"
+
+/////////////////////////////////////////////////////////////////////////////
