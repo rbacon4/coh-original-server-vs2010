@@ -1,6 +1,9 @@
 -Small Compiling tutorial-
+
 Open and compile 3rdparty\cryptopp\cryptlib2010.sln in all Win32 build configurations
+
 Open and compile 3rdparty\zlibsrc\zlibvc2010.sln in all Win32 build configurations
+
 Open and compile 3rdparty\zeromq2-1\builds\msvc\msvc2010.sln in all Win32 build configurations
 
 Open and compile Utilities\StructParser2010\StructParser.sln in the Release Win32 build configuration
