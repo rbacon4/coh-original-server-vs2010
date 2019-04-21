@@ -2721,9 +2721,9 @@ void load_PowerDictionary(SHARED_MEMORY_PARAM PowerDictionary *ppow, char *pchFi
 		ParserLoadFiles(pchFilename,".categories","powercats.bin",flags,
 			ParsePowerCatDictionary,(void*)ppow,NULL,NULL,NULL);
 		ParserLoadFiles(pchFilename,".powersets","powersets.bin",flags,
-			ParsePowerSetDictionary,(void*)ppow,NULL,NULL,load_PreprocPowerSetDictionary);
+			ParsePowerSetDictionary,(void*)ppow,NULL,NULL,(ParserLoadPreProcessFunc)load_PreprocPowerSetDictionary);
 		ParserLoadFiles(pchFilename,".powers","powers.bin",flags|s_ExtraLoadFlags,
-			ParsePowerDictionary,(void*)ppow,NULL,NULL,load_PreprocPowerDictionary);
+			ParsePowerDictionary,(void*)ppow,NULL,NULL,(ParserLoadPreProcessFunc)load_PreprocPowerDictionary);
 	
 		load_PowerDictionary_MoveToShared((PowerDictionary*)ppow, phandle, flags);
 	}

@@ -2,7 +2,7 @@
 //
 
 #include "stdafx.h"
-#include "stdio.h"
+#include <cstdio>
 #include "assert.h"
 #include "tokenizer.h"
 #include "structparser.h"

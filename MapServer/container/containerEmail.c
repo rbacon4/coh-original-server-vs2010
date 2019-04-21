@@ -143,7 +143,7 @@ char *emailSchema()
 
 void emailSend(int sender_id, int auth_id, char *subject,char *message,int *db_ids,int count,int *container_id_ptr, int influence, char * pchAttachment)
 {
-	Email	email;
+	/*Email	email;
 	char	*str;
 	int		i;
 	U32		cookie;
@@ -165,7 +165,7 @@ void emailSend(int sender_id, int auth_id, char *subject,char *message,int *db_i
 	str = dbContainerPackage(email_desc,(char*)&email);
 	cookie = dbSetDataCallback(container_id_ptr);
 	dbAsyncContainerUpdate(CONTAINER_EMAIL,-1,CONTAINER_CMD_CREATE,str,cookie);
-	free(str);
+	free(str);*/
 }
 
 static void emailUpdateAccountStats(Entity *e, U32 lastEmailTime, U32 lastNumEmailsSent)

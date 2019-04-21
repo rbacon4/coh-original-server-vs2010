@@ -10,9 +10,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Common\TurnstileServer\TurnstileCommon.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="TurnstileServer.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -25,11 +22,14 @@
     <ClCompile Include="TurnstileServerMsg.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\Common\TurnstileCommon.c">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\TurnstileServerCommon.c">
+      <Filter>External</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Common\TurnstileServer\TurnstileCommon.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="TurnstileServer.h">
       <Filter>Source Files</Filter>
     </ClInclude>
@@ -41,6 +41,12 @@
     </ClInclude>
     <ClInclude Include="TurnstileServerMsg.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TurnstileCommon.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TurnstileServerCommon.h">
+      <Filter>External</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

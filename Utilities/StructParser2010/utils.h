@@ -1,6 +1,6 @@
 #pragma once
 
-#include "stdio.h"
+#include <cstdio>
 
 
 FILE *fopen_nofail(const char *pFileName, const char *pModes);

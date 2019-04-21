@@ -11,6 +11,9 @@
     <Filter Include="External\persist">
       <UniqueIdentifier>{b20dd0a3-f561-4a61-b4ca-fd68e9a94e1e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="External\sql">
+      <UniqueIdentifier>{91b42ccf-52f8-4b61-872a-f0ac07482a38}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="admin.c">
@@ -76,6 +79,21 @@
     <ClCompile Include="..\Common\persist\textcrcjournal.c">
       <Filter>External\persist</Filter>
     </ClCompile>
+    <ClCompile Include="chatsqldb.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatSql.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\sql\sqlconn.c">
+      <Filter>External\sql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\sql\sqltask.cpp">
+      <Filter>External\sql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\persist\persist_sql.c">
+      <Filter>External\persist</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="admin.h">
@@ -136,6 +154,21 @@
       <Filter>External\persist</Filter>
     </ClInclude>
     <ClInclude Include="..\Common\persist\textcrcjournal.h">
+      <Filter>External\persist</Filter>
+    </ClInclude>
+    <ClInclude Include="chatsqldb.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChatSql.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\sql\sqlconn.h">
+      <Filter>External\sql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\sql\sqltask.h">
+      <Filter>External\sql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\persist\persist_sql.h">
       <Filter>External\persist</Filter>
     </ClInclude>
   </ItemGroup>

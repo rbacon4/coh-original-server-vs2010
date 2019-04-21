@@ -5,10 +5,6 @@
 	Name="UtilitiesLib"
 	ProjectGUID="{A6741F6E-5476-4F9F-9D65-62B54AAF1D08}"
 	RootNamespace="UtilitiesLib"
-	SccProjectName="SAK"
-	SccAuxPath="SAK"
-	SccLocalPath="SAK"
-	SccProvider="SAK"
 	Keyword="Win32Proj"
 	>
 	<Platforms>
@@ -27,167 +23,6 @@
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="..\..\PropertySheets\Common.vsprops;..\..\PropertySheets\LibsDirectory.vsprops;..\..\PropertySheets\Debug.vsprops;.\UtilitiesLib.vsprops"
-			CharacterSet="2"
-			>
-			<Tool
-				Name="VCPreBuildEventTool"
-			/>
-			<Tool
-				Name="VCCustomBuildTool"
-			/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"
-			/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"
-			/>
-			<Tool
-				Name="VCMIDLTool"
-			/>
-			<Tool
-				Name="VCCLCompilerTool"
-				BasicRuntimeChecks="0"
-				BufferSecurityCheck="false"
-			/>
-			<Tool
-				Name="VCManagedResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCPreLinkEventTool"
-			/>
-			<Tool
-				Name="VCLibrarianTool"
-			/>
-			<Tool
-				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCXDCMakeTool"
-			/>
-			<Tool
-				Name="VCBscMakeTool"
-			/>
-			<Tool
-				Name="VCFxCopTool"
-			/>
-			<Tool
-				Name="VCPostBuildEventTool"
-			/>
-		</Configuration>
-		<Configuration
-			Name="Full Debug|Win32"
-			IntermediateDirectory="$(ConfigurationName)"
-			ConfigurationType="4"
-			InheritedPropertySheets="..\..\PropertySheets\Common.vsprops;..\..\PropertySheets\LibsDirectory.vsprops;..\..\PropertySheets\FullDebug.vsprops;.\UtilitiesLib.vsprops"
-			CharacterSet="2"
-			>
-			<Tool
-				Name="VCPreBuildEventTool"
-			/>
-			<Tool
-				Name="VCCustomBuildTool"
-			/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"
-			/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"
-			/>
-			<Tool
-				Name="VCMIDLTool"
-			/>
-			<Tool
-				Name="VCCLCompilerTool"
-			/>
-			<Tool
-				Name="VCManagedResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCPreLinkEventTool"
-			/>
-			<Tool
-				Name="VCLibrarianTool"
-			/>
-			<Tool
-				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCXDCMakeTool"
-			/>
-			<Tool
-				Name="VCBscMakeTool"
-			/>
-			<Tool
-				Name="VCFxCopTool"
-			/>
-			<Tool
-				Name="VCPostBuildEventTool"
-			/>
-		</Configuration>
-		<Configuration
-			Name="Opt Debug|Win32"
-			ConfigurationType="4"
-			InheritedPropertySheets="..\..\PropertySheets\Common.vsprops;..\..\PropertySheets\LibsDirectory.vsprops;..\..\PropertySheets\OptDebug.vsprops;.\UtilitiesLib.vsprops"
-			CharacterSet="2"
-			>
-			<Tool
-				Name="VCPreBuildEventTool"
-			/>
-			<Tool
-				Name="VCCustomBuildTool"
-			/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"
-			/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"
-			/>
-			<Tool
-				Name="VCMIDLTool"
-			/>
-			<Tool
-				Name="VCCLCompilerTool"
-				BasicRuntimeChecks="0"
-				BufferSecurityCheck="false"
-			/>
-			<Tool
-				Name="VCManagedResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCPreLinkEventTool"
-			/>
-			<Tool
-				Name="VCLibrarianTool"
-			/>
-			<Tool
-				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCXDCMakeTool"
-			/>
-			<Tool
-				Name="VCBscMakeTool"
-			/>
-			<Tool
-				Name="VCFxCopTool"
-			/>
-			<Tool
-				Name="VCPostBuildEventTool"
-			/>
-		</Configuration>
-		<Configuration
-			Name="Release|Win32"
-			ConfigurationType="4"
-			InheritedPropertySheets="..\..\PropertySheets\Common.vsprops;..\..\PropertySheets\LibsDirectory.vsprops;..\..\PropertySheets\Release.vsprops;.\UtilitiesLib.vsprops"
 			CharacterSet="2"
 			>
 			<Tool
@@ -293,6 +128,59 @@
 			/>
 		</Configuration>
 		<Configuration
+			Name="Full Debug|Win32"
+			IntermediateDirectory="$(ConfigurationName)"
+			ConfigurationType="4"
+			InheritedPropertySheets="..\..\PropertySheets\Common.vsprops;..\..\PropertySheets\LibsDirectory.vsprops;..\..\PropertySheets\FullDebug.vsprops;.\UtilitiesLib.vsprops"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLibrarianTool"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+		<Configuration
 			Name="Full Debug|x64"
 			ConfigurationType="4"
 			InheritedPropertySheets="..\..\PropertySheets\Common.vsprops;..\..\PropertySheets\LibsDirectory.vsprops;..\..\PropertySheets\x64.vsprops;..\..\PropertySheets\FullDebug.vsprops;.\UtilitiesLib.vsprops"
@@ -345,9 +233,117 @@
 			/>
 		</Configuration>
 		<Configuration
+			Name="Opt Debug|Win32"
+			ConfigurationType="4"
+			InheritedPropertySheets="..\..\PropertySheets\Common.vsprops;..\..\PropertySheets\LibsDirectory.vsprops;..\..\PropertySheets\OptDebug.vsprops;.\UtilitiesLib.vsprops"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				BasicRuntimeChecks="0"
+				BufferSecurityCheck="false"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLibrarianTool"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+		<Configuration
 			Name="Opt Debug|x64"
 			ConfigurationType="4"
 			InheritedPropertySheets="..\..\PropertySheets\Common.vsprops;..\..\PropertySheets\LibsDirectory.vsprops;..\..\PropertySheets\x64.vsprops;..\..\PropertySheets\OptDebug.vsprops;.\UtilitiesLib.vsprops"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				BasicRuntimeChecks="0"
+				BufferSecurityCheck="false"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLibrarianTool"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			ConfigurationType="4"
+			InheritedPropertySheets="..\..\PropertySheets\Common.vsprops;..\..\PropertySheets\LibsDirectory.vsprops;..\..\PropertySheets\Release.vsprops;.\UtilitiesLib.vsprops"
 			CharacterSet="2"
 			>
 			<Tool
@@ -548,34 +544,16 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Full Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						AdditionalOptions="$(NOINHERIT) /D &quot;_MEMCHECK_H&quot;"
-						WholeProgramOptimization="false"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						AdditionalOptions="$(NOINHERIT) /D &quot;_MEMCHECK_H&quot;"
-						WholeProgramOptimization="false"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						AdditionalOptions="$(NOINHERIT) /D &quot;_MEMCHECK_H&quot;"
-						WholeProgramOptimization="false"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						AdditionalOptions="$(NOINHERIT) /D &quot;_MEMCHECK_H&quot;"
+						WholeProgramOptimization="false"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Full Debug|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -593,7 +571,25 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						AdditionalOptions="$(NOINHERIT) /D &quot;_MEMCHECK_H&quot;"
+						WholeProgramOptimization="false"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						AdditionalOptions="$(NOINHERIT) /D &quot;_MEMCHECK_H&quot;"
+						WholeProgramOptimization="false"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -718,28 +714,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -751,7 +725,29 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -816,28 +812,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -849,7 +823,29 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -927,30 +923,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="0"
-						InlineFunctionExpansion="2"
-						EnableIntrinsicFunctions="true"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="0"
-						InlineFunctionExpansion="2"
-						EnableIntrinsicFunctions="true"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -963,7 +935,31 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="0"
+						InlineFunctionExpansion="2"
+						EnableIntrinsicFunctions="true"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="0"
+						InlineFunctionExpansion="2"
+						EnableIntrinsicFunctions="true"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1068,34 +1064,16 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Full Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						ObjectFile="$(IntDir)\$(InputName)1.obj"
-						XMLDocumentationFileName="$(IntDir)\$(InputName)1.xdc"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						ObjectFile="$(IntDir)\$(InputName)1.obj"
-						XMLDocumentationFileName="$(IntDir)\$(InputName)1.xdc"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						ObjectFile="$(IntDir)\$(InputName)1.obj"
-						XMLDocumentationFileName="$(IntDir)\$(InputName)1.xdc"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						ObjectFile="$(IntDir)\$(InputName)1.obj"
+						XMLDocumentationFileName="$(IntDir)\$(InputName)1.xdc"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Full Debug|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1113,7 +1091,25 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						ObjectFile="$(IntDir)\$(InputName)1.obj"
+						XMLDocumentationFileName="$(IntDir)\$(InputName)1.xdc"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						ObjectFile="$(IntDir)\$(InputName)1.obj"
+						XMLDocumentationFileName="$(IntDir)\$(InputName)1.xdc"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1159,7 +1155,27 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						BufferSecurityCheck="false"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Full Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						BufferSecurityCheck="false"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Full Debug|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1179,39 +1195,19 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						BufferSecurityCheck="false"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Debug|x64"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						BufferSecurityCheck="false"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Full Debug|x64"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						BufferSecurityCheck="false"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						BufferSecurityCheck="false"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1251,22 +1247,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						BasicRuntimeChecks="0"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						BasicRuntimeChecks="0"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -1275,7 +1255,23 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						BasicRuntimeChecks="0"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						BasicRuntimeChecks="0"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1319,22 +1315,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						BasicRuntimeChecks="0"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						BasicRuntimeChecks="0"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -1343,7 +1323,23 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						BasicRuntimeChecks="0"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						BasicRuntimeChecks="0"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1448,32 +1444,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						EnableIntrinsicFunctions="true"
-						OmitFramePointers="false"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						EnableIntrinsicFunctions="true"
-						OmitFramePointers="false"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -1487,7 +1457,33 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						EnableIntrinsicFunctions="true"
+						OmitFramePointers="false"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						EnableIntrinsicFunctions="true"
+						OmitFramePointers="false"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1531,26 +1527,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -1561,7 +1537,27 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1602,7 +1598,28 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="1"
+						EnableIntrinsicFunctions="true"
+						PreprocessorDefinitions="_CRT_SECURE_NO_DEPRECATE"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Full Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						PreprocessorDefinitions="_CRT_SECURE_NO_DEPRECATE"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Full Debug|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1623,41 +1640,20 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="1"
-						EnableIntrinsicFunctions="true"
-						PreprocessorDefinitions="_CRT_SECURE_NO_DEPRECATE"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Debug|x64"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="1"
-						EnableIntrinsicFunctions="true"
-						PreprocessorDefinitions="_CRT_SECURE_NO_DEPRECATE"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Full Debug|x64"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						PreprocessorDefinitions="_CRT_SECURE_NO_DEPRECATE"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="1"
+						EnableIntrinsicFunctions="true"
+						PreprocessorDefinitions="_CRT_SECURE_NO_DEPRECATE"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1697,26 +1693,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -1727,7 +1703,27 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1773,26 +1769,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -1803,7 +1779,27 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1850,28 +1846,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -1883,7 +1857,29 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -1924,28 +1920,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -1957,7 +1931,29 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2014,28 +2010,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -2047,7 +2021,29 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2120,28 +2116,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -2153,7 +2127,29 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2219,22 +2215,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						BasicRuntimeChecks="0"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						BasicRuntimeChecks="0"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -2243,7 +2223,23 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						BasicRuntimeChecks="0"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						BasicRuntimeChecks="0"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2314,28 +2310,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -2347,7 +2321,29 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2413,30 +2409,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						EnableIntrinsicFunctions="true"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						EnableIntrinsicFunctions="true"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -2449,7 +2421,31 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						EnableIntrinsicFunctions="true"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						EnableIntrinsicFunctions="true"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2537,7 +2533,27 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						BufferSecurityCheck="false"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Full Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						BufferSecurityCheck="false"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Full Debug|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2557,39 +2573,19 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						BufferSecurityCheck="false"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Debug|x64"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						BufferSecurityCheck="false"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Full Debug|x64"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						BufferSecurityCheck="false"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						BufferSecurityCheck="false"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2636,28 +2632,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -2669,7 +2643,29 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2728,32 +2724,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						EnableIntrinsicFunctions="true"
-						FavorSizeOrSpeed="1"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						EnableIntrinsicFunctions="true"
-						FavorSizeOrSpeed="1"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -2767,7 +2737,33 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						EnableIntrinsicFunctions="true"
+						FavorSizeOrSpeed="1"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						EnableIntrinsicFunctions="true"
+						FavorSizeOrSpeed="1"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2836,28 +2832,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="3"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="3"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -2869,7 +2843,29 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="3"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="3"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2926,7 +2922,26 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Full Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						ShowIncludes="false"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Full Debug|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -2945,37 +2960,18 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Debug|x64"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Full Debug|x64"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						ShowIncludes="false"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -3029,22 +3025,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						BasicRuntimeChecks="0"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						BasicRuntimeChecks="0"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -3053,7 +3033,23 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						BasicRuntimeChecks="0"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						BasicRuntimeChecks="0"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -3092,28 +3088,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -3125,7 +3099,29 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -3166,28 +3162,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -3199,7 +3173,29 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -3240,28 +3236,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -3273,7 +3247,29 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -3350,28 +3346,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -3383,7 +3357,29 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -3435,26 +3431,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="3"
-						InlineFunctionExpansion="2"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="3"
-						InlineFunctionExpansion="2"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -3465,7 +3441,27 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="3"
+						InlineFunctionExpansion="2"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="3"
+						InlineFunctionExpansion="2"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -3504,28 +3500,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -3537,7 +3511,29 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -3588,7 +3584,28 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="3"
+						InlineFunctionExpansion="2"
+						EnableIntrinsicFunctions="true"
+						BasicRuntimeChecks="0"
+						BufferSecurityCheck="false"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Full Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						BufferSecurityCheck="false"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Full Debug|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -3609,41 +3626,20 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="3"
-						InlineFunctionExpansion="2"
-						EnableIntrinsicFunctions="true"
-						BasicRuntimeChecks="0"
-						BufferSecurityCheck="false"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Debug|x64"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="3"
-						InlineFunctionExpansion="2"
-						EnableIntrinsicFunctions="true"
-						BasicRuntimeChecks="0"
-						BufferSecurityCheck="false"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Full Debug|x64"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						BufferSecurityCheck="false"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="3"
+						InlineFunctionExpansion="2"
+						EnableIntrinsicFunctions="true"
+						BasicRuntimeChecks="0"
+						BufferSecurityCheck="false"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -3713,30 +3709,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						EnableIntrinsicFunctions="true"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						EnableIntrinsicFunctions="true"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -3749,7 +3721,31 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						EnableIntrinsicFunctions="true"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						EnableIntrinsicFunctions="true"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -3808,7 +3804,26 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="3"
+						InlineFunctionExpansion="2"
+						FloatingPointModel="2"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Full Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						FloatingPointModel="2"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Full Debug|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -3827,37 +3842,18 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="3"
-						InlineFunctionExpansion="2"
-						FloatingPointModel="2"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Debug|x64"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="3"
-						InlineFunctionExpansion="2"
-						FloatingPointModel="2"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Full Debug|x64"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						FloatingPointModel="2"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="3"
+						InlineFunctionExpansion="2"
+						FloatingPointModel="2"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -3905,26 +3901,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -3935,7 +3911,27 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -3974,7 +3970,26 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						FloatingPointModel="2"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Full Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						FloatingPointModel="2"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Full Debug|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -3993,37 +4008,18 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						FloatingPointModel="2"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Debug|x64"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						FloatingPointModel="2"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Full Debug|x64"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						FloatingPointModel="2"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						FloatingPointModel="2"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -4071,26 +4067,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -4101,7 +4077,27 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -4140,28 +4136,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -4173,7 +4147,29 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -4226,28 +4222,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -4259,7 +4233,29 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -4300,28 +4296,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -4333,7 +4307,29 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -4406,28 +4402,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -4439,7 +4413,29 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -4480,7 +4476,26 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						FloatingPointModel="2"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Full Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						FloatingPointModel="2"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Full Debug|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -4499,37 +4514,18 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						FloatingPointModel="2"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Debug|x64"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						FloatingPointModel="2"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Full Debug|x64"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						FloatingPointModel="2"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						FloatingPointModel="2"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -4578,28 +4574,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -4611,7 +4585,29 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -4660,7 +4656,26 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						FloatingPointModel="2"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Full Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						FloatingPointModel="2"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Full Debug|x64"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -4679,37 +4694,18 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						FloatingPointModel="2"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Debug|x64"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						FloatingPointModel="2"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Full Debug|x64"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						FloatingPointModel="2"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						FloatingPointModel="2"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -4778,28 +4774,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -4811,7 +4785,29 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -4852,28 +4848,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -4885,7 +4859,29 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -4926,28 +4922,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -4959,7 +4933,29 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -5008,28 +5004,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -5041,7 +5015,29 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -5082,28 +5078,6 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
-					Name="Opt Debug|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-						Optimization="2"
-						InlineFunctionExpansion="2"
-						BasicRuntimeChecks="0"
-						DebugInformationFormat="3"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|x64"
 					>
 					<Tool
@@ -5115,7 +5089,29 @@
 					/>
 				</FileConfiguration>
 				<FileConfiguration
+					Name="Opt Debug|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
 					Name="Opt Debug|x64"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						InlineFunctionExpansion="2"
+						BasicRuntimeChecks="0"
+						DebugInformationFormat="3"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
@@ -5158,26 +5154,6 @@
 						/>
 					</FileConfiguration>
 					<FileConfiguration
-						Name="Opt Debug|Win32"
-						>
-						<Tool
-							Name="VCCLCompilerTool"
-							Optimization="2"
-							InlineFunctionExpansion="2"
-							DebugInformationFormat="3"
-						/>
-					</FileConfiguration>
-					<FileConfiguration
-						Name="Release|Win32"
-						>
-						<Tool
-							Name="VCCLCompilerTool"
-							Optimization="2"
-							InlineFunctionExpansion="2"
-							DebugInformationFormat="3"
-						/>
-					</FileConfiguration>
-					<FileConfiguration
 						Name="Debug|x64"
 						>
 						<Tool
@@ -5188,7 +5164,27 @@
 						/>
 					</FileConfiguration>
 					<FileConfiguration
+						Name="Opt Debug|Win32"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+							Optimization="2"
+							InlineFunctionExpansion="2"
+							DebugInformationFormat="3"
+						/>
+					</FileConfiguration>
+					<FileConfiguration
 						Name="Opt Debug|x64"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+							Optimization="2"
+							InlineFunctionExpansion="2"
+							DebugInformationFormat="3"
+						/>
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Release|Win32"
 						>
 						<Tool
 							Name="VCCLCompilerTool"
@@ -5226,26 +5222,6 @@
 						/>
 					</FileConfiguration>
 					<FileConfiguration
-						Name="Opt Debug|Win32"
-						>
-						<Tool
-							Name="VCCLCompilerTool"
-							Optimization="2"
-							InlineFunctionExpansion="2"
-							DebugInformationFormat="3"
-						/>
-					</FileConfiguration>
-					<FileConfiguration
-						Name="Release|Win32"
-						>
-						<Tool
-							Name="VCCLCompilerTool"
-							Optimization="2"
-							InlineFunctionExpansion="2"
-							DebugInformationFormat="3"
-						/>
-					</FileConfiguration>
-					<FileConfiguration
 						Name="Debug|x64"
 						>
 						<Tool
@@ -5256,7 +5232,27 @@
 						/>
 					</FileConfiguration>
 					<FileConfiguration
+						Name="Opt Debug|Win32"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+							Optimization="2"
+							InlineFunctionExpansion="2"
+							DebugInformationFormat="3"
+						/>
+					</FileConfiguration>
+					<FileConfiguration
 						Name="Opt Debug|x64"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+							Optimization="2"
+							InlineFunctionExpansion="2"
+							DebugInformationFormat="3"
+						/>
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Release|Win32"
 						>
 						<Tool
 							Name="VCCLCompilerTool"

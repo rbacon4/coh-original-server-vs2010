@@ -218,7 +218,7 @@ int turnstileParseTurnstileConfig(int loadFlags)
 	}
 	if (loadFlags & TURNSTILE_LOAD_DEF)
 	{
-		if (!ParserLoadFiles(NULL, "defs/turnstile_server.def", "turnstile_server.bin", PARSER_SERVERONLY, ParseTurnstileDef, &turnstileConfigDef, NULL, NULL, TurnstileDefPostProcess))
+		if (!ParserLoadFiles(NULL, "defs/turnstile_server.def", "turnstile_server.bin", PARSER_SERVERONLY, ParseTurnstileDef, &turnstileConfigDef, NULL, NULL, (ParserLoadPreProcessFunc)TurnstileDefPostProcess))
 		{
 			return 0;
 		}

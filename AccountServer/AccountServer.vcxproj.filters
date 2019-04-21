@@ -8,47 +8,14 @@
     <Filter Include="External">
       <UniqueIdentifier>{3608dd4e-e895-4b42-ae3e-ef4a069d05f6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="External\Playspan">
+      <UniqueIdentifier>{a4925dad-2466-459c-9605-49469a977858}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\sql">
+      <UniqueIdentifier>{5d55276a-b394-4706-8d4d-dfb1926a2d8d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="account_inventory.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="accountcmds.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Common\account\AccountData.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="AccountDb.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="AccountServer.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Billing.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="BillingMsgs.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="order_genericproduct.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="order_rename.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="order_respec.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="order_shardxfer.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="order_slot.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="product_mapping.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\Common\account\AccountCatalog.c">
       <Filter>External</Filter>
     </ClCompile>
@@ -67,47 +34,68 @@
     <ClCompile Include="..\Common\persist\textcrcjournal.c">
       <Filter>External</Filter>
     </ClCompile>
+    <ClCompile Include="account_inventory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="account_loyaltyrewards.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="accountcmds.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountDb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountSql.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="request.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="request_certification.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="request_multi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="request_rename.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="request_respec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="request_shardxfer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="request_slot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="transaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\sql\sqlconn.c">
+      <Filter>External\sql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\sql\sqltask.cpp">
+      <Filter>External\sql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\account\AccountData.c">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\account\AccountTypes.cpp">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Playspan\JSONParser.cpp">
+      <Filter>External\Playspan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Playspan\PostBackListener.cpp">
+      <Filter>External\Playspan</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="account_inventory.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="accountcmds.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Common\account\AccountData.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="AccountDb.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="AccountServer.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Billing.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BillingMsgs.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="order_genericproduct.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="order_rename.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="order_respec.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="order_shardxfer.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="order_slot.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="product_mapping.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\Common\account\AccountCatalog.h">
       <Filter>External</Filter>
     </ClInclude>
@@ -128,6 +116,66 @@
     </ClInclude>
     <ClInclude Include="..\Common\persist\textcrcjournal.h">
       <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="account_inventory.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="account_loyaltyrewards.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountCmds.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountDb.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountServer.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountSql.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="request.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="request_certification.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="request_multi.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="request_rename.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="request_respec.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="request_shardxfer.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="request_slot.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="transaction.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\sql\sqlconn.h">
+      <Filter>External\sql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\sql\sqltask.h">
+      <Filter>External\sql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\account\AccountData.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\account\AccountTypes.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Playspan\JSONParser.h">
+      <Filter>External\Playspan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Playspan\PostBackListener.h">
+      <Filter>External\Playspan</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

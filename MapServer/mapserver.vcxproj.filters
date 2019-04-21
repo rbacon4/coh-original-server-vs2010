@@ -153,6 +153,18 @@
     <Filter Include="account">
       <UniqueIdentifier>{1dc159fa-4cc3-4f17-8808-7b8da29c1a69}</UniqueIdentifier>
     </Filter>
+    <Filter Include="script\LuaLibs">
+      <UniqueIdentifier>{14ea9c21-6506-4960-9978-7a783c2cdd2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External">
+      <UniqueIdentifier>{9b519651-28b5-4fba-9775-cd632412f499}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\LUA">
+      <UniqueIdentifier>{30013116-75ea-4bdf-be68-e948f7459e9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\Common">
+      <UniqueIdentifier>{e8dd5159-aee1-470e-a5a2-da785bf0fdbf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ai\entai.c">
@@ -557,9 +569,6 @@
     <ClCompile Include="..\Common\entity\powers_load.c">
       <Filter>entity\common</Filter>
     </ClCompile>
-    <ClCompile Include="..\AccountServer\product_mapping.c">
-      <Filter>entity\common</Filter>
-    </ClCompile>
     <ClCompile Include="..\Common\entity\Proficiency.c">
       <Filter>entity\common</Filter>
     </ClCompile>
@@ -822,9 +831,6 @@
       <Filter>gameSys</Filter>
     </ClCompile>
     <ClCompile Include="gameSys\Turnstile.c">
-      <Filter>gameSys</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Common\TurnstileServer\TurnstileCommon.c">
       <Filter>gameSys</Filter>
     </ClCompile>
     <ClCompile Include="zowie.c">
@@ -1277,9 +1283,6 @@
     <ClCompile Include="script\TrialRooms\TerraVolta.c">
       <Filter>script\TrialRooms</Filter>
     </ClCompile>
-    <ClCompile Include="script\etc\AIScriptPatrolTest.c">
-      <Filter>script\etc</Filter>
-    </ClCompile>
     <ClCompile Include="script\etc\baseraidscript.c">
       <Filter>script\etc</Filter>
     </ClCompile>
@@ -1667,6 +1670,195 @@
     <ClCompile Include="..\Common\account\AccountInventory.c">
       <Filter>account</Filter>
     </ClCompile>
+    <ClCompile Include="..\Common\account\AccountTypes.cpp">
+      <Filter>account</Filter>
+    </ClCompile>
+    <ClCompile Include="script\scriptlua.c">
+      <Filter>script</Filter>
+    </ClCompile>
+    <ClCompile Include="script\LuaLibs\ScriptLuaAI.c">
+      <Filter>script\LuaLibs</Filter>
+    </ClCompile>
+    <ClCompile Include="script\LuaLibs\ScriptLuaCallback.c">
+      <Filter>script\LuaLibs</Filter>
+    </ClCompile>
+    <ClCompile Include="script\LuaLibs\ScriptLuaCommon.c">
+      <Filter>script\LuaLibs</Filter>
+    </ClCompile>
+    <ClCompile Include="script\LuaLibs\ScriptLuaEncounter.c">
+      <Filter>script\LuaLibs</Filter>
+    </ClCompile>
+    <ClCompile Include="script\LuaLibs\ScriptLuaEntity.c">
+      <Filter>script\LuaLibs</Filter>
+    </ClCompile>
+    <ClCompile Include="script\LuaLibs\ScriptLuaGlowie.c">
+      <Filter>script\LuaLibs</Filter>
+    </ClCompile>
+    <ClCompile Include="script\LuaLibs\ScriptLuaKarma.c">
+      <Filter>script\LuaLibs</Filter>
+    </ClCompile>
+    <ClCompile Include="script\LuaLibs\ScriptLuaLocation.c">
+      <Filter>script\LuaLibs</Filter>
+    </ClCompile>
+    <ClCompile Include="script\LuaLibs\ScriptLuaMessage.c">
+      <Filter>script\LuaLibs</Filter>
+    </ClCompile>
+    <ClCompile Include="script\LuaLibs\ScriptLuaMission.c">
+      <Filter>script\LuaLibs</Filter>
+    </ClCompile>
+    <ClCompile Include="script\LuaLibs\ScriptLuaReward.c">
+      <Filter>script\LuaLibs</Filter>
+    </ClCompile>
+    <ClCompile Include="script\LuaLibs\ScriptLuaScript.c">
+      <Filter>script\LuaLibs</Filter>
+    </ClCompile>
+    <ClCompile Include="script\LuaLibs\ScriptLuaTeam.c">
+      <Filter>script\LuaLibs</Filter>
+    </ClCompile>
+    <ClCompile Include="script\LuaLibs\ScriptLuaUI.c">
+      <Filter>script\LuaLibs</Filter>
+    </ClCompile>
+    <ClCompile Include="script\LuaLibs\ScriptLuaVar.c">
+      <Filter>script\LuaLibs</Filter>
+    </ClCompile>
+    <ClCompile Include="script\LuaLibs\ScriptLuaWaypoint.c">
+      <Filter>script\LuaLibs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lapi.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lauxlib.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lbaselib.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lcode.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\ldblib.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\ldebug.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\ldo.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\ldump.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lfunc.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lgc.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\linit.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\liolib.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\llex.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lmathlib.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lmem.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\loadlib.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lobject.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lopcodes.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\loslib.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lparser.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lstate.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lstring.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lstrlib.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\ltable.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\ltablib.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\ltm.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lua.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\luac.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lundump.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lvm.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lzio.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\print.c">
+      <Filter>External\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LWC_common.c">
+      <Filter>External\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\TurnstileServerCommon.c">
+      <Filter>External\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\TurnstileCommon.c">
+      <Filter>External\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="MARTY.c">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="gameComm\NewFeatures.c">
+      <Filter>gameComm</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Missions\EscortToPlace.c">
+      <Filter>script\Missions</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Missions\HolidayEventMission.c">
+      <Filter>script\Missions</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Missions\OnEnterGrantPower.c">
+      <Filter>script\Missions</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Missions\OnEnterObjectiveComplete.c">
+      <Filter>script\Missions</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Missions\SetObjectiveText.c">
+      <Filter>script\Missions</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Missions\MultiLeadToPlace.c">
+      <Filter>script\Missions</Filter>
+    </ClCompile>
+    <ClCompile Include="script\Encounters\EntityScriptStart.c">
+      <Filter>script\Encounters</Filter>
+    </ClCompile>
+    <ClCompile Include="script\zoneevents\NemesisPlot.c">
+      <Filter>script\ZoneEvents</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ai\entai.h">
@@ -1694,9 +1886,6 @@
       <Filter>ai</Filter>
     </ClInclude>
     <ClInclude Include="ai\entaiScript.h">
-      <Filter>ai</Filter>
-    </ClInclude>
-    <ClInclude Include="ai\entaiScriptStruct.h">
       <Filter>ai</Filter>
     </ClInclude>
     <ClInclude Include="ai\entaivars.h">
@@ -2296,9 +2485,6 @@
     <ClInclude Include="gameSys\Turnstile.h">
       <Filter>gameSys</Filter>
     </ClInclude>
-    <ClInclude Include="..\Common\TurnstileServer\TurnstileCommon.h">
-      <Filter>gameSys</Filter>
-    </ClInclude>
     <ClInclude Include="..\Common\gameData\BodyPart.h">
       <Filter>gameSys\gameData</Filter>
     </ClInclude>
@@ -2872,6 +3058,141 @@
     <ClInclude Include="storyarc\missionServerMapTest.h" />
     <ClInclude Include="..\Common\player\pophelp.h" />
     <ClInclude Include="zowie.h" />
+    <ClInclude Include="..\Common\account\AccountTypes.h">
+      <Filter>account</Filter>
+    </ClInclude>
+    <ClInclude Include="script\LuaLibs\ScriptLuaAI.h">
+      <Filter>script\LuaLibs</Filter>
+    </ClInclude>
+    <ClInclude Include="script\LuaLibs\ScriptLuaCallback.h">
+      <Filter>script\LuaLibs</Filter>
+    </ClInclude>
+    <ClInclude Include="script\LuaLibs\ScriptLuaCommon.h">
+      <Filter>script\LuaLibs</Filter>
+    </ClInclude>
+    <ClInclude Include="script\LuaLibs\ScriptLuaEncounter.h">
+      <Filter>script\LuaLibs</Filter>
+    </ClInclude>
+    <ClInclude Include="script\LuaLibs\ScriptLuaEntity.h">
+      <Filter>script\LuaLibs</Filter>
+    </ClInclude>
+    <ClInclude Include="script\LuaLibs\ScriptLuaGlowie.h">
+      <Filter>script\LuaLibs</Filter>
+    </ClInclude>
+    <ClInclude Include="script\LuaLibs\ScriptLuaKarma.h">
+      <Filter>script\LuaLibs</Filter>
+    </ClInclude>
+    <ClInclude Include="script\LuaLibs\ScriptLuaLocation.h">
+      <Filter>script\LuaLibs</Filter>
+    </ClInclude>
+    <ClInclude Include="script\LuaLibs\ScriptLuaMessage.h">
+      <Filter>script\LuaLibs</Filter>
+    </ClInclude>
+    <ClInclude Include="script\LuaLibs\ScriptLuaMission.h">
+      <Filter>script\LuaLibs</Filter>
+    </ClInclude>
+    <ClInclude Include="script\LuaLibs\ScriptLuaReward.h">
+      <Filter>script\LuaLibs</Filter>
+    </ClInclude>
+    <ClInclude Include="script\LuaLibs\ScriptLuaScript.h">
+      <Filter>script\LuaLibs</Filter>
+    </ClInclude>
+    <ClInclude Include="script\LuaLibs\ScriptLuaTeam.h">
+      <Filter>script\LuaLibs</Filter>
+    </ClInclude>
+    <ClInclude Include="script\LuaLibs\ScriptLuaUI.h">
+      <Filter>script\LuaLibs</Filter>
+    </ClInclude>
+    <ClInclude Include="script\LuaLibs\ScriptLuaVar.h">
+      <Filter>script\LuaLibs</Filter>
+    </ClInclude>
+    <ClInclude Include="script\LuaLibs\ScriptLuaWaypoint.h">
+      <Filter>script\LuaLibs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lapi.h">
+      <Filter>External\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lauxlib.h">
+      <Filter>External\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lcode.h">
+      <Filter>External\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\ldebug.h">
+      <Filter>External\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\ldo.h">
+      <Filter>External\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lfunc.h">
+      <Filter>External\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lgc.h">
+      <Filter>External\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\llex.h">
+      <Filter>External\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\llimits.h">
+      <Filter>External\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lmem.h">
+      <Filter>External\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lobject.h">
+      <Filter>External\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lopcodes.h">
+      <Filter>External\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lparser.h">
+      <Filter>External\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lstate.h">
+      <Filter>External\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lstring.h">
+      <Filter>External\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\ltable.h">
+      <Filter>External\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\ltm.h">
+      <Filter>External\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lua.h">
+      <Filter>External\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\luaconf.h">
+      <Filter>External\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lualib.h">
+      <Filter>External\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lundump.h">
+      <Filter>External\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lvm.h">
+      <Filter>External\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lzio.h">
+      <Filter>External\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LWC_common.h">
+      <Filter>External\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TurnstileServerCommon.h">
+      <Filter>External\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TurnstileCommon.h">
+      <Filter>External\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="MARTY.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="gameComm\NewFeatures.h">
+      <Filter>gameComm</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="CrypticSv.ico">

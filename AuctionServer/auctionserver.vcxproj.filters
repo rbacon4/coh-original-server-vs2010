@@ -8,6 +8,9 @@
     <Filter Include="External">
       <UniqueIdentifier>{e1359f73-07e7-4564-82bd-67aa89f19e90}</UniqueIdentifier>
     </Filter>
+    <Filter Include="External\sql">
+      <UniqueIdentifier>{64bb7342-e232-487d-9a18-3c5076c62d7a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AsyncFileWriter.c">
@@ -31,9 +34,6 @@
     <ClCompile Include="BinHeap.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="XactLog.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="XactServer.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -53,6 +53,18 @@
       <Filter>External</Filter>
     </ClCompile>
     <ClCompile Include="..\Common\auction\Xact.c">
+      <Filter>External</Filter>
+    </ClCompile>
+    <ClCompile Include="AuctionSql.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\sql\sqlconn.c">
+      <Filter>External\sql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\sql\sqltask.cpp">
+      <Filter>External\sql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\persist\persist_sql.c">
       <Filter>External</Filter>
     </ClCompile>
   </ItemGroup>
@@ -76,9 +88,6 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="BinHeap.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="XactLog.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="XactServer.h">
@@ -106,6 +115,18 @@
       <Filter>External</Filter>
     </ClInclude>
     <ClInclude Include="..\Common\auction\Xact.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="AuctionSql.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\sql\sqlconn.h">
+      <Filter>External\sql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\sql\sqltask.h">
+      <Filter>External\sql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\persist\persist_sql.h">
       <Filter>External</Filter>
     </ClInclude>
   </ItemGroup>

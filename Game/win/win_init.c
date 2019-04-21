@@ -1464,10 +1464,10 @@ void windowExit(int exitCode)
 	{
 		if (game_state.steamAuthSessionTicketID)
 		{
-			COHSteam_CancelAuthSessionTicket(game_state.steamAuthSessionTicketID);
+			//COHSteam_CancelAuthSessionTicket(game_state.steamAuthSessionTicketID);
 		}
 
-		COHSteam_Shutdown();
+		//COHSteam_Shutdown();
 	}
 
 	demoStop();

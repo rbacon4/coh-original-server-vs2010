@@ -2,7 +2,7 @@
 #define _FILELISTWRITER_H_
 
 #include "windows.h"
-#include "stdio.h"
+#include <cstdio>
 #include "filelistloader.h"
 
 class FileListWriter

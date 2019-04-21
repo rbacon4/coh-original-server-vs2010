@@ -37,10 +37,10 @@ static void unlockSteamAchievement(const char *achievementName)
 {
 #ifndef TEST_CLIENT
 	bool hasAchievement = false;
-	if (COHSteam_GetAchievement(achievementName, &hasAchievement) && !hasAchievement)
+	/*if (COHSteam_GetAchievement(achievementName, &hasAchievement) && !hasAchievement)
 	{
 		COHSteam_SetAchievement(achievementName);
-	}
+	}*/
 #endif
 }
 

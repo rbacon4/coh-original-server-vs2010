@@ -105,14 +105,16 @@
   <ItemDefinitionGroup>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\Common\TurnstileServer\TurnstileCommon.c" />
+    <ClCompile Include="..\Common\TurnstileCommon.c" />
+    <ClCompile Include="..\Common\TurnstileServerCommon.c" />
     <ClCompile Include="TurnstileServer.c" />
     <ClCompile Include="TurnstileServerEvent.c" />
     <ClCompile Include="TurnstileServerGroup.c" />
     <ClCompile Include="TurnstileServerMsg.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Common\TurnstileServer\TurnstileCommon.h" />
+    <ClInclude Include="..\Common\TurnstileCommon.h" />
+    <ClInclude Include="..\Common\TurnstileServerCommon.h" />
     <ClInclude Include="TurnstileServer.h" />
     <ClInclude Include="TurnstileServerEvent.h" />
     <ClInclude Include="TurnstileServerGroup.h" />

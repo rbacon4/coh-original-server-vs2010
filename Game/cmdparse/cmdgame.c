@@ -106,7 +106,7 @@
 #include "chatClient.h"
 #include "sprite_text.h"
 #include "texWords.h"
-#include "uiBody.h"
+//#include "uiBody.h"
 #include "uiChat.h"
 #include "uiOptions.h"
 #include "uiDialog.h"
@@ -5842,7 +5842,7 @@ int cmdGameParse(char *str, int x, int y)
 			}
 			else
 			{
-				COHSteam_SetDebugLevel(tmp_int);
+				//COHSteam_SetDebugLevel(tmp_int);
 			}
 		xcase CMD_STEAM_GRANT_ACHIEVEMENT:
 			if (!game_state.steamIsInitialized)
@@ -5851,7 +5851,7 @@ int cmdGameParse(char *str, int x, int y)
 			}
 			else
 			{
-				bool rc = COHSteam_SetAchievement(tmp_str);
+				bool rc = false;//COHSteam_SetAchievement(tmp_str);
 				printf("COHSteam_SetAchievement(%s) %s\n", tmp_str, rc ? "succeeded" : "failed");
 			}
 		xcase CMD_STEAM_REVOKE_ACHIEVEMENT:
@@ -5861,7 +5861,7 @@ int cmdGameParse(char *str, int x, int y)
 			}
 			else
 			{
-				bool rc = COHSteam_ClearAchievement(tmp_str);
+				bool rc = false;//COHSteam_ClearAchievement(tmp_str);
 				printf("COHSteam_ClearAchievement(%s) %s\n", tmp_str, rc ? "succeeded" : "failed");
 			}
 		xcase CMD_STEAM_CHECK_ACHIEVEMENT:
@@ -5872,14 +5872,14 @@ int cmdGameParse(char *str, int x, int y)
 			else
 			{
 				bool achieved = false;
-				if (COHSteam_GetAchievement(tmp_str, &achieved))
+				/*if (COHSteam_GetAchievement(tmp_str, &achieved))
 				{
 					printf("COHSteam_GetAchievement(%s) returned %s\n", tmp_str, achieved ? "true" : "false");
 				}
 				else
 				{
 					printf("COHSteam_GetAchievement(%s) failed\n", tmp_str);
-				}
+				}*/
 			}
 		xcase CMD_STEAM_REVOKE_ALL_ACHIEVEMENTS:
 			if (!game_state.steamIsInitialized)
@@ -5888,7 +5888,7 @@ int cmdGameParse(char *str, int x, int y)
 			}
 			else
 			{
-				bool rc = COHSteam_ClearAllAchievements(tmp_str);
+				bool rc = false;//COHSteam_ClearAllAchievements(tmp_str);
 				printf("COHSteam_ClearAllAchievements() %s\n", rc ? "succeeded" : "failed");
 			}
 		xcase CMD_STEAM_GET_USER_NAME:
@@ -5898,7 +5898,7 @@ int cmdGameParse(char *str, int x, int y)
 			}
 			else
 			{
-				printf("COHSteam_GetUserName() returned %s\n", COHSteam_GetUserName());
+				//printf("COHSteam_GetUserName() returned %s\n", COHSteam_GetUserName());
 			}
 		xcase CMD_STEAM_GENERATE_AUTH_SESSION_TICKET:
 			if (!game_state.steamIsInitialized)
@@ -5907,17 +5907,17 @@ int cmdGameParse(char *str, int x, int y)
 			}
 			else
 			{
-				U8 steam_auth_ticket[STEAM_AUTH_SESSION_TICKET_MAX_LEN];
-				U32 steam_auth_ticket_len = 0;
+				/*U8 steam_auth_ticket[STEAM_AUTH_SESSION_TICKET_MAX_LEN];
+				U32 steam_auth_ticket_len = 0;*/
 
 				// Cancel the old ticket first
 				if (game_state.steamAuthSessionTicketID)
 				{
-					COHSteam_CancelAuthSessionTicket(game_state.steamAuthSessionTicketID);
+					//COHSteam_CancelAuthSessionTicket(game_state.steamAuthSessionTicketID);
 					game_state.steamAuthSessionTicketID = 0;
 				}
 
-				game_state.steamAuthSessionTicketID = COHSteam_GetAuthSessionTicket(steam_auth_ticket, sizeof(steam_auth_ticket), &steam_auth_ticket_len);
+				game_state.steamAuthSessionTicketID = 0;//COHSteam_GetAuthSessionTicket(steam_auth_ticket, sizeof(steam_auth_ticket), &steam_auth_ticket_len);
 			}
 		xdefault:
 #ifndef FINAL

@@ -195,7 +195,7 @@ static float scrollSet_drawRegion( ScrollSet * pSet, ScrollSetRegion * pRegion, 
  		//scrollSet_DrawRegionSelector( pRegion, center, y - selector_sc*SS_SELECTOR_Y, z+20, selector_sc, (selector_sc*wd) );
 	}
 
-	if ( drawCostumeRegionButton( x, y, z+20, pSet->wd, pRegion->outer_ht, sc, pRegion->pchName, pRegion->isOpen, 0, 1, LEFT_COLUMN_SQUISH ) )
+	if ( drawCostumeRegionButton( pRegion->pchName, x, y, z+20, pSet->wd, pRegion->outer_ht, sc,  pRegion->isOpen, 0, 1 ) )
 		regionOpen( pRegion );
 
 
@@ -275,7 +275,7 @@ void scrollSet_Draw( ScrollSet * pSet, F32 x, F32 y, F32 z, F32 sc )
 	int i;
 	F32 start_y = y;
 
-	updateScrollSelectors(y,y+pSet->ht, 1.f, 1.f); // do this first so it can intercept all clicks
+	updateScrollSelectors(1.f, 1.f); // do this first so it can intercept all clicks
 	
 	// manage the button expanding
 	for( i = 0; i < region_total; i++)

@@ -1,6 +1,6 @@
 #include "sourceparser.h"
 #include "stdafx.h"
-#include "stdio.h"
+#include <cstdio>
 #include "strutils.h"
 
 

@@ -102,11 +102,19 @@
   <PropertyGroup>
     <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
   </PropertyGroup>
-  <ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Opt Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\libs\UtilitiesLib\UtilsCXX;..\libs\UtilitiesLib\UtilsNew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\Common\persist\persist_sql.c" />
+    <ClCompile Include="..\Common\sql\sqlconn.c" />
+    <ClCompile Include="..\Common\sql\sqltask.cpp" />
     <ClCompile Include="admin.c" />
     <ClCompile Include="channels.c" />
+    <ClCompile Include="ChatSql.cpp" />
+    <ClCompile Include="chatsqldb.c" />
     <ClCompile Include="csr.c" />
     <ClCompile Include="friends.c" />
     <ClCompile Include="ignore.c" />
@@ -128,8 +136,13 @@
     <ClCompile Include="..\Common\persist\textcrcjournal.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Common\persist\persist_sql.h" />
+    <ClInclude Include="..\Common\sql\sqlconn.h" />
+    <ClInclude Include="..\Common\sql\sqltask.h" />
     <ClInclude Include="admin.h" />
     <ClInclude Include="channels.h" />
+    <ClInclude Include="ChatSql.h" />
+    <ClInclude Include="chatsqldb.h" />
     <ClInclude Include="csr.h" />
     <ClInclude Include="friends.h" />
     <ClInclude Include="ignore.h" />

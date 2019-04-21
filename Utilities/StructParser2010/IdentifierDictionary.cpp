@@ -1,5 +1,5 @@
 #include "identifierDictionary.h"
-#include "stdio.h"
+#include <cstdio>
 #include "strutils.h"
 #include "utils.h"
 

@@ -3233,7 +3233,7 @@ static void beaconServerStartup(BeaconizerType beaconizerType,
 			beacon_server.isMasterServer ? "MASTER " :
 				beacon_server.isRequestServer ? "REQUEST " :
 					"",
-			beacon_server.isMasterServer ? "" : "ÄÄÄÄÄÄÄ");
+			beacon_server.isMasterServer ? "" : "ÄÄÄÄÄÄ?");
 
 	beaconCurTimeString(1);
 }
@@ -4007,7 +4007,7 @@ static void printClientState(BeaconServerClientData* client, S32 index, void* us
 
 	printf("ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ\n");
 
-	printf("³%s", index == beacon_server.selectedClient ? ">" : " ");
+	printf("?s", index == beacon_server.selectedClient ? ">" : " ");
 
 	if(sentryHasClient(client->sentry, client, 0, client->uid, &i)){
 		BeaconServerSentryClientData* sentryClient = client->sentry->sentryClients.clients + i;
@@ -4098,7 +4098,7 @@ static void printClientState(BeaconServerClientData* client, S32 index, void* us
 
 	consoleSetDefaultColor();
 
-	printf("\n³%s", index == beacon_server.selectedClient ? ">" : " ");
+	printf("\n?s", index == beacon_server.selectedClient ? ">" : " ");
 
 	consoleSetColor(COLOR_GREEN|COLOR_BLUE, bgcolor);
 	elapsedTime = beaconGetCurTime() - client->connectTime;
@@ -4144,7 +4144,7 @@ static void printClientState(BeaconServerClientData* client, S32 index, void* us
 			if(	client->server.isRequestServer &&
 				client->requestServer.processNode)
 			{
-				printf("³%s", index == beacon_server.selectedClient ? ">" : " ");
+				printf("?s", index == beacon_server.selectedClient ? ">" : " ");
 
 				beaconPrintfDim(COLOR_GREEN,
 								"Assigned map: %s\n",
@@ -4243,14 +4243,14 @@ static void beaconServerPrintClientStates(void){
 	consoleSetDefaultColor();
 
 	printf(	"\n"
-			"       ÚÄÄÄÄÄÄÄÄÄÄÄÄÄ¿\n"
-			"       ³ ");
+			"       ÚÄÄÄÄÄÄÄÄÄÄÄÄÄ?n"
+			"       ?");
 
 	beaconPrintf(COLOR_RED|COLOR_GREEN|COLOR_BLUE, "Client Info");
 
-	printf(	" ³\n"
+	printf(	" ?n"
 			"ÚÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ\n"
-			"³ ");
+			"?");
 
 	beaconPrintf(COLOR_GREEN,
 				"%-17s%-25s%-18s%-12s%-12s\n",
@@ -4265,7 +4265,7 @@ static void beaconServerPrintClientStates(void){
 		beaconServerForEachClient(printClientState, NULL);
 	}else{
 		printf(	"ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ\n"
-				"³ No Clients Connected!\n");
+				"?No Clients Connected!\n");
 	}
 
 	printf(	"ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ\n"
@@ -4413,16 +4413,16 @@ static void displayBlockInfo(void){
 					beaconConsolePrintf(COLOR_GREEN|COLOR_BLUE, block->clients.count < 16 ? "%x" : "X", block->clients.count);
 				}
 				else if(block->legalCompressed.uncheckedCount){
-					beaconConsolePrintf(COLOR_GREEN, "Û");
+					beaconConsolePrintf(COLOR_GREEN, "?");
 				}
 				else if(block->legalCompressed.totalCount){
-					beaconConsolePrintf(COLOR_GREEN|COLOR_BLUE, "Û");
+					beaconConsolePrintf(COLOR_GREEN|COLOR_BLUE, "?");
 				}
 				else{
-					beaconConsolePrintfDim(COLOR_GREEN, "Û");
+					beaconConsolePrintfDim(COLOR_GREEN, "?");
 				}
 			}else{
-				beaconConsolePrintfDim(COLOR_RED, "Û");
+				beaconConsolePrintfDim(COLOR_RED, "?");
 			}
 		}
 

@@ -111,7 +111,19 @@
       <AdditionalLibraryDirectories>../3rdparty/bin/vc10/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Opt Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\Common\account;..\3rdparty\zeromq2-1\include;..\libs\UtilitiesLib\UtilsCXX;..\libs\UtilitiesLib\UtilsNew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\Common\account\AccountCatalog.c" />
+    <ClCompile Include="..\Common\account\AccountTypes.cpp" />
+    <ClCompile Include="..\Common\entity\LoadDefCommon.c" />
+    <ClCompile Include="..\Common\sql\sqlconn.c" />
+    <ClCompile Include="..\Common\sql\sqltask.cpp" />
+    <ClCompile Include="..\Common\TurnstileCommon.c" />
+    <ClCompile Include="..\Common\TurnstileServerCommon.c" />
     <ClCompile Include="accountservercomm.c" />
     <ClCompile Include="arenacomm.c" />
     <ClCompile Include="..\Common\auction\Auction.c" />
@@ -155,8 +167,6 @@
     <ClCompile Include="dbmission.c" />
     <ClCompile Include="dbmsg.c" />
     <ClCompile Include="dbperf.c" />
-    <ClCompile Include="dbproxy.c" />
-    <ClCompile Include="dbproxyrelay.c" />
     <ClCompile Include="dbrelay.c" />
     <ClCompile Include="doors.c" />
     <ClCompile Include="launchercomm.c" />
@@ -167,6 +177,7 @@
     <ClCompile Include="missionservercomm.c" />
     <ClCompile Include="namecache.c" />
     <ClCompile Include="offline.c" />
+    <ClCompile Include="overloadProtection.c" />
     <ClCompile Include="queueservercomm.c" />
     <ClCompile Include="serverAutoStart.c" />
     <ClCompile Include="servercfg.c" />
@@ -184,18 +195,24 @@
     <ClCompile Include="..\Common\ClientLogin\clientcommLogin.c" />
     <ClCompile Include="..\Common\MissionSearch.c" />
     <ClCompile Include="..\Common\MissionServer\missionserver_meta.c" />
-    <ClCompile Include="..\Common\TurnstileServer\TurnstileCommon.c" />
+    <ClCompile Include="zeromqSocket.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Common\account\AccountCatalog.h" />
+    <ClInclude Include="..\Common\account\AccountTypes.h" />
+    <ClInclude Include="..\Common\entity\LoadDefCommon.h" />
+    <ClInclude Include="..\Common\sql\sqlconn.h" />
+    <ClInclude Include="..\Common\sql\sqltask.h" />
+    <ClInclude Include="..\Common\TurnstileCommon.h" />
+    <ClInclude Include="..\Common\TurnstileServerCommon.h" />
     <ClInclude Include="accountservercomm.h" />
     <ClInclude Include="..\Common\auction\Auction.h" />
     <ClInclude Include="auctionservercomm.h" />
     <ClInclude Include="beaconservercomm.h" />
-    <ClInclude Include="dbproxy.h" />
-    <ClInclude Include="dbproxyrelay.h" />
     <ClInclude Include="..\Common\entity\gametypes.h" />
     <ClInclude Include="loadBalancing.h" />
     <ClInclude Include="missionservercomm.h" />
+    <ClInclude Include="overloadProtection.h" />
     <ClInclude Include="queueservercomm.h" />
     <ClInclude Include="serverAutoStart.h" />
     <ClInclude Include="statagg.h" />
@@ -247,9 +264,9 @@
     <ClInclude Include="statservercomm.h" />
     <ClInclude Include="status.h" />
     <ClInclude Include="svrmoncomm.h" />
-    <ClInclude Include="..\Common\TurnstileServer\TurnstileCommon.h" />
     <ClInclude Include="waitingEntities.h" />
     <ClInclude Include="weeklyTFcfg.h" />
+    <ClInclude Include="zeromqSocket.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\libs\UtilitiesLib\UtilitiesLib.vcxproj">

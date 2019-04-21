@@ -472,18 +472,18 @@ void handleAccountPlayNCAuthKeyUpdate(Packet *pak)
 {
 	int request_key = pktGetBitsAuto(pak);
 	char * auth_key = pktGetString(pak);
-	#if ! defined(TEST_CLIENT)		
+	/*#if ! defined(TEST_CLIENT)		
 		PlaySpanStoreLauncher_ReceiveAuthKeyResponse(request_key, auth_key);
-	#endif
+	#endif*/
 }
 
 void handleClientAuth(Packet *pak)
 {
 	U32 timeStamp = pktGetBitsAuto(pak);
 	char* digest = pktGetString(pak);
-	#if ! defined(TEST_CLIENT)	
+	/*#if ! defined(TEST_CLIENT)	
 		PlaySpanStoreLauncher_SetDigest( timeStamp, digest );
-	#endif
+	#endif*/
 }
 
 void receiveAccountServerUnavailable(Packet *pak)

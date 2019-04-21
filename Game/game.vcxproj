@@ -73,6 +73,7 @@
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">$(Configuration)\</IntDir>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Opt Debug|Win32'">false</GenerateManifest>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</GenerateManifest>
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</PostBuildEventUseInBuild>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Link>
@@ -94,12 +95,20 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Link>
-      <AdditionalDependencies>../Utilities/Allegorithmic/1.x/lib/win32/release/substance_ogl2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>../Utilities/Allegorithmic/1.x/lib/win32/release/substance_ogl2.lib;HeroBrowser.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>LIBCPMTD.lib;MSVCRTD.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalLibraryDirectories>..\libs\HeroBrowser\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>UI\Hybrid;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\Common\account\AccountTypes.cpp" />
     <ClCompile Include="..\Common\auth\auth.c" />
+    <ClCompile Include="..\Common\entity\character_combat_eval.c" />
+    <ClCompile Include="..\Common\LWC_common.c" />
     <ClCompile Include="clientcomm\authclient.c" />
     <ClCompile Include="..\Common\auth\authUserData.c" />
     <ClCompile Include="clientcomm\autoResumeInfo.c" />
@@ -258,6 +267,7 @@
     <ClCompile Include="..\Common\gameData\store_data.c" />
     <ClCompile Include="graphics\allegorithmic.c" />
     <ClCompile Include="graphics\camera.c" />
+    <ClCompile Include="graphics\camera_detached.c" />
     <ClCompile Include="graphics\clothnode.c" />
     <ClCompile Include="graphics\failtext.c" />
     <ClCompile Include="graphics\fog.c" />
@@ -270,6 +280,7 @@
       <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Default</BasicRuntimeChecks>
     </ClCompile>
     <ClCompile Include="graphics\gfxDebug.c" />
+    <ClCompile Include="graphics\gfxDevHUD.c" />
     <ClCompile Include="graphics\gfxLoadScreens.c" />
     <ClCompile Include="graphics\gfxSettings.c" />
     <ClCompile Include="graphics\gfxwindow.c" />
@@ -588,6 +599,7 @@
     <ClCompile Include="..\Common\group\grouputil.c" />
     <ClCompile Include="language\langClientUtil.c" />
     <ClCompile Include="..\Common\language\commonLangUtil.c" />
+    <ClCompile Include="LWC.c" />
     <ClCompile Include="player\badges_client.c" />
     <ClCompile Include="player\inventory_client.c" />
     <ClCompile Include="player\player.c">
@@ -1101,6 +1113,20 @@
     </ClCompile>
     <ClCompile Include="sound\sound_ambient.c" />
     <ClCompile Include="sound\sound_sys.c" />
+    <ClCompile Include="UI\Hybrid\uiArchetype.c" />
+    <ClCompile Include="UI\Hybrid\uiBody.c" />
+    <ClCompile Include="UI\Hybrid\uiCostumes.c" />
+    <ClCompile Include="UI\Hybrid\uiHybridMenu.c" />
+    <ClCompile Include="UI\Hybrid\uiLoyaltyTree.c" />
+    <ClCompile Include="UI\Hybrid\uiLoyaltyTreeAccess.c" />
+    <ClCompile Include="UI\Hybrid\uiLWC.c" />
+    <ClCompile Include="UI\Hybrid\uiMainStoreAccess.c" />
+    <ClCompile Include="UI\Hybrid\uiOrigin.c" />
+    <ClCompile Include="UI\Hybrid\uiPlaystyle.c" />
+    <ClCompile Include="UI\Hybrid\uiPower.c" />
+    <ClCompile Include="UI\Hybrid\uiRedirect.c" />
+    <ClCompile Include="UI\Hybrid\uiRegister.c" />
+    <ClCompile Include="UI\Hybrid\uiWebStoreFrame.c" />
     <ClCompile Include="Ui\uiBox.c" />
     <ClCompile Include="Ui\uiBrowser.c" />
     <ClCompile Include="Ui\uiBuff.c" />
@@ -1110,6 +1136,8 @@
     <ClCompile Include="Ui\uiComboBox.c" />
     <ClCompile Include="Ui\uiConceptInv.c" />
     <ClCompile Include="UI\uiConsole.c" />
+    <ClCompile Include="UI\uiContactFinder.c" />
+    <ClCompile Include="UI\uiConvertEnhancement.c" />
     <ClCompile Include="UI\uiCursor.c" />
     <ClCompile Include="UI\uiDialog.c" />
     <ClCompile Include="Ui\UIEdit.c" />
@@ -1129,12 +1157,15 @@
     <ClCompile Include="Ui\uiMapSelect.c" />
     <ClCompile Include="UI\uiMissionSearch.c" />
     <ClCompile Include="UI\uiNet.c" />
+    <ClCompile Include="UI\uiNewFeatures.c" />
     <ClCompile Include="UI\uiPictureBrowser.c" />
     <ClCompile Include="Ui\uiRaidResult.c" />
     <ClCompile Include="UI\uiReticle.c" />
+    <ClCompile Include="UI\uiSalvageOpen.c" />
     <ClCompile Include="UI\uiScrollBar.c" />
     <ClCompile Include="Ui\uiScrollSelector.c" />
     <ClCompile Include="UI\uiScrollSet.c" />
+    <ClCompile Include="UI\uiServerTransfer.c" />
     <ClCompile Include="UI\uiSlider.c" />
     <ClCompile Include="Ui\uiSMFView.c" />
     <ClCompile Include="Ui\uiTabControl.c" />
@@ -1197,7 +1228,6 @@
     <ClCompile Include="UI\uiMissionReview.c" />
     <ClCompile Include="Ui\uiMissionSummary.c" />
     <ClCompile Include="UI\uiMMMapViewer.c" />
-    <ClCompile Include="UI\uiPayment.c" />
     <ClCompile Include="Ui\uiPet.c" />
     <ClCompile Include="Ui\uiPetition.c" />
     <ClCompile Include="Ui\uiPlaque.c" />
@@ -1227,11 +1257,10 @@
     <ClCompile Include="UI\uiTrialReminder.c" />
     <ClCompile Include="UI\uiTurnstile.c" />
     <ClCompile Include="UI\uiUtilGame.c" />
+    <ClCompile Include="UI\uiWebBrowser.c" />
     <ClCompile Include="UI\uiWindows.c" />
     <ClCompile Include="Ui\uiWindows_init.c" />
     <ClCompile Include="UI\uiAvatar.c" />
-    <ClCompile Include="UI\uiCashStore.c" />
-    <ClCompile Include="UI\uiCharacterCreationNLM.c" />
     <ClCompile Include="Ui\uiCombineSpec.c" />
     <ClCompile Include="UI\uiCostume.c" />
     <ClCompile Include="Ui\uiGender.c" />
@@ -1244,20 +1273,17 @@
     <ClCompile Include="UI\uiNPCCreationNLM.c" />
     <ClCompile Include="UI\uiNPCProfile.c" />
     <ClCompile Include="Ui\uiOptions.c" />
-    <ClCompile Include="UI\uiOriginClass.c" />
     <ClCompile Include="UI\uiPCCCreationNLM.c" />
     <ClCompile Include="UI\uiPCCPowers.c" />
     <ClCompile Include="UI\uiPCCProfile.c" />
     <ClCompile Include="UI\uiPCCRank.c" />
     <ClCompile Include="UI\uiPowerCust.c" />
     <ClCompile Include="UI\uiPowers.c" />
-    <ClCompile Include="UI\uiProfile.c" />
     <ClCompile Include="Ui\uiReSpec.c" />
     <ClCompile Include="UI\uiSaveCostume.c" />
     <ClCompile Include="Ui\uiSupercostume.c" />
     <ClCompile Include="Ui\uiSuperRegistration.c" />
     <ClCompile Include="Ui\uiTailor.c" />
-    <ClCompile Include="UI\uiTailorNLM.c" />
     <ClCompile Include="UI\uiUtilMenu.c" />
     <ClCompile Include="UI\uiWebUtil.c" />
     <ClCompile Include="UI\sprite\sprite_base.c" />
@@ -1282,6 +1308,7 @@
     <ClCompile Include="..\Common\utils\debugUtils.c" />
     <ClCompile Include="..\Common\utils\EVAL.C" />
     <ClCompile Include="..\Common\utils\Position.c" />
+    <ClCompile Include="validateFiles.c" />
     <ClCompile Include="win\hwlight.c" />
     <ClCompile Include="win\input.c" />
     <ClCompile Include="win\win_cursor.c" />
@@ -1911,11 +1938,9 @@
     <ClCompile Include="..\common\container\container_store.c" />
     <ClCompile Include="..\common\container\container_util.c" />
     <ClCompile Include="..\common\container\dbcontainerpack.c" />
-    <ClCompile Include="..\Common\account\AccountBilling.c" />
     <ClCompile Include="..\Common\account\AccountCatalog.c" />
     <ClCompile Include="..\Common\account\AccountData.c" />
     <ClCompile Include="..\Common\account\AccountInventory.c" />
-    <ClCompile Include="..\Common\account\AccountPayment.c" />
     <ClCompile Include="demo.c" />
     <ClCompile Include="game.c" />
     <ClCompile Include="main.c" />
@@ -1923,7 +1948,10 @@
     <ClCompile Include="UI\uiPopHelp.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Common\account\AccountTypes.h" />
     <ClInclude Include="..\Common\auth\auth.h" />
+    <ClInclude Include="..\Common\entity\character_combat_eval.h" />
+    <ClInclude Include="..\Common\LWC_common.h" />
     <ClInclude Include="clientcomm\authclient.h" />
     <ClInclude Include="..\Common\auth\authconn.h" />
     <ClInclude Include="..\Common\auth\authUserData.h" />
@@ -2071,6 +2099,7 @@
     <ClInclude Include="graphics\frustum_c.h" />
     <ClInclude Include="graphics\gfx.h" />
     <ClInclude Include="graphics\gfxDebug.h" />
+    <ClInclude Include="graphics\gfxDevHUD.h" />
     <ClInclude Include="graphics\gfxLoadScreens.h" />
     <ClInclude Include="graphics\gfxSettings.h" />
     <ClInclude Include="graphics\gfxwindow.h" />
@@ -2145,6 +2174,7 @@
     <ClInclude Include="..\Common\group\grouputil.h" />
     <ClInclude Include="language\langClientUtil.h" />
     <ClInclude Include="..\Common\language\commonLangUtil.h" />
+    <ClInclude Include="LWC.h" />
     <ClInclude Include="player\badges_client.h" />
     <ClInclude Include="player\inventory_client.h" />
     <ClInclude Include="player\player.h" />
@@ -2211,6 +2241,20 @@
     <ClInclude Include="sound\sound.h" />
     <ClInclude Include="sound\sound_ambient.h" />
     <ClInclude Include="sound\sound_sys.h" />
+    <ClInclude Include="UI\Hybrid\uiArchetype.h" />
+    <ClInclude Include="UI\Hybrid\uiBody.h" />
+    <ClInclude Include="UI\Hybrid\uiCostumes.h" />
+    <ClInclude Include="UI\Hybrid\uiHybridMenu.h" />
+    <ClInclude Include="UI\Hybrid\uiLoyaltyTree.h" />
+    <ClInclude Include="UI\Hybrid\uiLoyaltyTreeAccess.h" />
+    <ClInclude Include="UI\Hybrid\uiLWC.h" />
+    <ClInclude Include="UI\Hybrid\uiMainStoreAccess.h" />
+    <ClInclude Include="UI\Hybrid\uiOrigin.h" />
+    <ClInclude Include="UI\Hybrid\uiPlaystyle.h" />
+    <ClInclude Include="UI\Hybrid\uiPower.h" />
+    <ClInclude Include="UI\Hybrid\uiRedirect.h" />
+    <ClInclude Include="UI\Hybrid\uiRegister.h" />
+    <ClInclude Include="UI\Hybrid\uiWebStoreFrame.h" />
     <ClInclude Include="Ui\uiBox.h" />
     <ClInclude Include="Ui\uiBrowser.h" />
     <ClInclude Include="Ui\uiBuff.h" />
@@ -2220,6 +2264,8 @@
     <ClInclude Include="Ui\uiComboBox.h" />
     <ClInclude Include="Ui\uiConceptInv.h" />
     <ClInclude Include="UI\uiConsole.h" />
+    <ClInclude Include="UI\uiContactFinder.h" />
+    <ClInclude Include="UI\uiConvertEnhancement.h" />
     <ClInclude Include="UI\uiCursor.h" />
     <ClInclude Include="UI\uiDialog.h" />
     <ClInclude Include="Ui\UIEdit.h" />
@@ -2240,12 +2286,15 @@
     <ClInclude Include="Ui\uiMapSelect.h" />
     <ClInclude Include="UI\uiMissionSearch.h" />
     <ClInclude Include="UI\uiNet.h" />
+    <ClInclude Include="UI\uiNewFeatures.h" />
     <ClInclude Include="UI\uiPictureBrowser.h" />
     <ClInclude Include="Ui\uiRaidResult.h" />
     <ClInclude Include="UI\uiReticle.h" />
+    <ClInclude Include="UI\uiSalvageOpen.h" />
     <ClInclude Include="UI\uiScrollBar.h" />
     <ClInclude Include="Ui\uiScrollSelector.h" />
     <ClInclude Include="UI\uiScrollSet.h" />
+    <ClInclude Include="UI\uiServerTransfer.h" />
     <ClInclude Include="Ui\uiSlider.h" />
     <ClInclude Include="Ui\uiSMFView.h" />
     <ClInclude Include="Ui\uiTabControl.h" />
@@ -2308,7 +2357,6 @@
     <ClInclude Include="UI\uiMissionReview.h" />
     <ClInclude Include="Ui\uiMissionSummary.h" />
     <ClInclude Include="UI\uiMMMapViewer.h" />
-    <ClInclude Include="UI\uiPayment.h" />
     <ClInclude Include="Ui\uiPet.h" />
     <ClInclude Include="Ui\uiPetition.h" />
     <ClInclude Include="Ui\uiPlaque.h" />
@@ -2338,11 +2386,10 @@
     <ClInclude Include="UI\uiTrialReminder.h" />
     <ClInclude Include="UI\uiTurnstile.h" />
     <ClInclude Include="UI\uiUtilGame.h" />
+    <ClInclude Include="UI\uiWebBrowser.h" />
     <ClInclude Include="UI\uiWindows.h" />
     <ClInclude Include="Ui\uiWindows_init.h" />
     <ClInclude Include="UI\uiAvatar.h" />
-    <ClInclude Include="UI\uiCashStore.h" />
-    <ClInclude Include="UI\uiCharacterCreationNLM.h" />
     <ClInclude Include="Ui\uiCombineSpec.h" />
     <ClInclude Include="UI\uiCostume.h" />
     <ClInclude Include="UI\uiGender.h" />
@@ -2355,20 +2402,17 @@
     <ClInclude Include="UI\uiNPCCreationNLM.h" />
     <ClInclude Include="UI\uiNPCProfile.h" />
     <ClInclude Include="Ui\uiOptions.h" />
-    <ClInclude Include="UI\uiOriginClass.h" />
     <ClInclude Include="UI\uiPCCCreationNLM.h" />
     <ClInclude Include="UI\uiPCCPowers.h" />
     <ClInclude Include="UI\uiPCCProfile.h" />
     <ClInclude Include="UI\uiPCCRank.h" />
     <ClInclude Include="UI\uiPowerCust.h" />
     <ClInclude Include="UI\uiPowers.h" />
-    <ClInclude Include="UI\uiProfile.h" />
     <ClInclude Include="Ui\uiReSpec.h" />
     <ClInclude Include="UI\uiSaveCostume.h" />
     <ClInclude Include="Ui\uiSupercostume.h" />
     <ClInclude Include="Ui\uiSuperRegistration.h" />
     <ClInclude Include="Ui\uiTailor.h" />
-    <ClInclude Include="UI\uiTailorNLM.h" />
     <ClInclude Include="UI\uiUtilMenu.h" />
     <ClInclude Include="UI\uiWebUtil.h" />
     <ClInclude Include="UI\sprite\sprite_base.h" />
@@ -2485,11 +2529,9 @@
     <ClInclude Include="..\common\container\container_store.h" />
     <ClInclude Include="..\common\container\container_util.h" />
     <ClInclude Include="..\common\container\dbcontainerpack.h" />
-    <ClInclude Include="..\Common\account\AccountBilling.h" />
     <ClInclude Include="..\Common\account\AccountCatalog.h" />
     <ClInclude Include="..\Common\account\AccountData.h" />
     <ClInclude Include="..\Common\account\AccountInventory.h" />
-    <ClInclude Include="..\Common\account\AccountPayment.h" />
     <ClInclude Include="demo.h" />
     <ClInclude Include="game.h" />
     <ClInclude Include="..\Common\player\pophelp.h" />

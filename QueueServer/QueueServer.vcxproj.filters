@@ -30,6 +30,9 @@
     <ClCompile Include="QueueServer_Passthrough.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="BinHeap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Common\account\AccountData.h">
@@ -42,6 +45,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="QueueServer_Passthrough.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BinHeap.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1097,9 +1097,9 @@ void dbInit(int start_static)
 	sqlFifoInit();
 
 	loadstart_printf("Loading templates...");
-	var_attrs = tpltLoadAttributes("server/db/templates/vars.attribute","c:/coh_data/attributes/vars.attribute","Attributes");
-	badge_attrs = tpltLoadAttributes("server/db/templates/badgestats.attribute","c:/coh_data/attributes/badgestats.attribute","BadgeStatsAttributes");
-	pop_help_attrs = tpltLoadAttributes("server/db/templates/pophelp.attribute","c:/coh_data/attributes/pophelp.attribute","PopHelpAttributes");
+	var_attrs = tpltLoadAttributes("server/db/templates/vars.attribute","server/db/templates/vars.attribute","Attributes");
+	badge_attrs = tpltLoadAttributes("server/db/templates/badgestats.attribute","server/db/templates/badgestats.attribute","BadgeStatsAttributes");
+	pop_help_attrs = tpltLoadAttributes("server/db/templates/pophelp.attribute","server/db/templates/pophelp.attribute","PopHelpAttributes");
 
 	testdatabasetypes_list = containerListRegister(CONTAINER_TESTDATABASETYPES,"TestDataBaseTypes",sizeof(DbContainer),NULL,NULL,NULL);
 	ent_list = containerListRegister(CONTAINER_ENTS,"Ents",sizeof(EntCon),entStatusCb,entContainerUpdtCb,ent_cmds);

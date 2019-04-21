@@ -18,6 +18,9 @@
       <UniqueIdentifier>{a03c4f8d-47c3-409f-b524-cf243ada1dd3}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl</Extensions>
     </Filter>
+    <Filter Include="Source Files\Common\sql">
+      <UniqueIdentifier>{e71a3adc-7d22-4b7d-b1ab-bb03c1347411}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="accountservercomm.c">
@@ -104,12 +107,6 @@
     <ClCompile Include="dbperf.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="dbproxy.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="dbproxyrelay.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="dbrelay.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -191,7 +188,31 @@
     <ClCompile Include="..\Common\MissionServer\missionserver_meta.c">
       <Filter>Source Files\Common</Filter>
     </ClCompile>
-    <ClCompile Include="..\Common\TurnstileServer\TurnstileCommon.c">
+    <ClCompile Include="..\Common\sql\sqlconn.c">
+      <Filter>Source Files\Common\sql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\sql\sqltask.cpp">
+      <Filter>Source Files\Common\sql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\account\AccountTypes.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="zeromqSocket.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="overloadProtection.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\account\AccountCatalog.c">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\entity\LoadDefCommon.c">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\TurnstileServerCommon.c">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\TurnstileCommon.c">
       <Filter>Source Files\Common</Filter>
     </ClCompile>
   </ItemGroup>
@@ -206,12 +227,6 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="beaconservercomm.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="dbproxy.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="dbproxyrelay.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="..\Common\entity\gametypes.h">
@@ -376,14 +391,38 @@
     <ClInclude Include="svrmoncomm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\Common\TurnstileServer\TurnstileCommon.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="waitingEntities.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="weeklyTFcfg.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\sql\sqlconn.h">
+      <Filter>Source Files\Common\sql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\sql\sqltask.h">
+      <Filter>Source Files\Common\sql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\account\AccountTypes.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="zeromqSocket.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="overloadProtection.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\account\AccountCatalog.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\entity\LoadDefCommon.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TurnstileServerCommon.h">
+      <Filter>Source Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TurnstileCommon.h">
+      <Filter>Source Files\Common</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

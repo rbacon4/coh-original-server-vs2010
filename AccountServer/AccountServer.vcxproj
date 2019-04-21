@@ -102,50 +102,71 @@
   <PropertyGroup>
     <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
   </PropertyGroup>
-  <ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Opt Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\3rdparty\yajl\win32\yajl-2.0.3\include;..\3rdparty\zeromq2-1\include;..\libs\UtilitiesLib\UtilsCXX;..\libs\UtilitiesLib\UtilsNew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\3rdparty\yajl\win32\yajl-2.0.3\lib\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>yajl_s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="account_inventory.c" />
-    <ClCompile Include="accountcmds.c" />
-    <ClCompile Include="..\Common\account\AccountData.c" />
-    <ClCompile Include="AccountDb.c" />
-    <ClCompile Include="AccountServer.c" />
-    <ClCompile Include="Billing.c" />
-    <ClCompile Include="BillingMsgs.c" />
-    <ClCompile Include="order_genericproduct.c" />
-    <ClCompile Include="order_rename.c" />
-    <ClCompile Include="order_respec.c" />
-    <ClCompile Include="order_shardxfer.c" />
-    <ClCompile Include="order_slot.c" />
-    <ClCompile Include="product_mapping.c" />
     <ClCompile Include="..\Common\account\AccountCatalog.c" />
+    <ClCompile Include="..\Common\account\AccountData.c" />
+    <ClCompile Include="..\Common\account\AccountTypes.cpp" />
     <ClCompile Include="..\Common\cmdparse\AppServerCmd.c" />
     <ClCompile Include="..\Common\cmdparse\cmdaccountserver.c" />
     <ClCompile Include="..\Common\entity\LoadDefCommon.c" />
     <ClCompile Include="..\Common\persist\textcrcdb.c" />
     <ClCompile Include="..\Common\persist\textcrcjournal.c" />
+    <ClCompile Include="..\Common\Playspan\JSONParser.cpp" />
+    <ClCompile Include="..\Common\Playspan\PostBackListener.cpp" />
+    <ClCompile Include="..\Common\sql\sqlconn.c" />
+    <ClCompile Include="..\Common\sql\sqltask.cpp" />
+    <ClCompile Include="accountcmds.cpp" />
+    <ClCompile Include="AccountDb.cpp" />
+    <ClCompile Include="AccountServer.cpp" />
+    <ClCompile Include="AccountSql.cpp" />
+    <ClCompile Include="account_inventory.cpp" />
+    <ClCompile Include="account_loyaltyrewards.cpp" />
+    <ClCompile Include="request.cpp" />
+    <ClCompile Include="request_certification.cpp" />
+    <ClCompile Include="request_multi.cpp" />
+    <ClCompile Include="request_rename.cpp" />
+    <ClCompile Include="request_respec.cpp" />
+    <ClCompile Include="request_shardxfer.cpp" />
+    <ClCompile Include="request_slot.cpp" />
+    <ClCompile Include="transaction.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="account_inventory.h" />
-    <ClInclude Include="accountcmds.h" />
-    <ClInclude Include="..\Common\account\AccountData.h" />
-    <ClInclude Include="AccountDb.h" />
-    <ClInclude Include="AccountServer.h" />
-    <ClInclude Include="Billing.h" />
-    <ClInclude Include="BillingMsgs.h" />
-    <ClInclude Include="order_genericproduct.h" />
-    <ClInclude Include="order_rename.h" />
-    <ClInclude Include="order_respec.h" />
-    <ClInclude Include="order_shardxfer.h" />
-    <ClInclude Include="order_slot.h" />
-    <ClInclude Include="product_mapping.h" />
     <ClInclude Include="..\Common\account\AccountCatalog.h" />
+    <ClInclude Include="..\Common\account\AccountData.h" />
+    <ClInclude Include="..\Common\account\AccountTypes.h" />
     <ClInclude Include="..\Common\cmdparse\AppServerCmd.h" />
     <ClInclude Include="..\Common\cmdparse\cmdaccountserver.h" />
     <ClInclude Include="..\Common\cmdparse\cmdenum.h" />
     <ClInclude Include="..\Common\entity\gametypes.h" />
     <ClInclude Include="..\Common\persist\textcrcdb.h" />
     <ClInclude Include="..\Common\persist\textcrcjournal.h" />
+    <ClInclude Include="..\Common\Playspan\JSONParser.h" />
+    <ClInclude Include="..\Common\Playspan\PostBackListener.h" />
+    <ClInclude Include="..\Common\sql\sqlconn.h" />
+    <ClInclude Include="..\Common\sql\sqltask.h" />
+    <ClInclude Include="AccountCmds.h" />
+    <ClInclude Include="AccountDb.hpp" />
+    <ClInclude Include="AccountServer.hpp" />
+    <ClInclude Include="AccountSql.h" />
+    <ClInclude Include="account_inventory.h" />
+    <ClInclude Include="account_loyaltyrewards.h" />
+    <ClInclude Include="request.hpp" />
+    <ClInclude Include="request_certification.hpp" />
+    <ClInclude Include="request_multi.hpp" />
+    <ClInclude Include="request_rename.hpp" />
+    <ClInclude Include="request_respec.hpp" />
+    <ClInclude Include="request_shardxfer.hpp" />
+    <ClInclude Include="request_slot.hpp" />
+    <ClInclude Include="transaction.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\libs\UtilitiesLib\UtilitiesLib.vcxproj">

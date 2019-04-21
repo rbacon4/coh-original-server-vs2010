@@ -1,7 +1,7 @@
 #ifndef _STRUTILS_H_ 
 #define _STRUTILS_H_
 
-#include "stdio.h"
+#include <cstdio>
 
 // From "../../libs/UtilitiesLib/stdtypes.h"
 #if defined(_FULLDEBUG)

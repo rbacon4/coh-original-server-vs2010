@@ -2003,7 +2003,7 @@ void game_loadData(int isCostumeCreator)
 		loadend_printf("");
 		
 		// PlaySpan URL defs
-		PlaySpanStoreLauncher_InitModule();
+		//PlaySpanStoreLauncher_InitModule();
 
 	}
 
@@ -2190,8 +2190,8 @@ void game_beforeLoop(int isCostumeCreator, int timer)
 	// are bad and the game won't initialize.
 	rdrClearOldDriverCheck();
 
-	if (game_state.steamIsInitialized)
-		COHSteam_RequestCurrentStats();
+	/*if (game_state.steamIsInitialized)
+		COHSteam_RequestCurrentStats();*/
 
 }
 
@@ -2393,12 +2393,12 @@ int game_mainLoop(int timer)
 				
 				LWC_Tick();
 				
-			PERFINFO_AUTO_STOP_START("COHSteam_Tick", 1);
+			/*PERFINFO_AUTO_STOP_START("COHSteam_Tick", 1);
 
 				if (game_state.steamIsInitialized)
 					COHSteam_Tick();
 
-			PERFINFO_AUTO_STOP();
+			PERFINFO_AUTO_STOP();*/
 
 		PERFINFO_AUTO_STOP_CHECKED("others");
 		

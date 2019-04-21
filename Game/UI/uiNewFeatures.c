@@ -73,11 +73,11 @@ int newFeatures_webDataRetrieveCallback(void * data)
 
 void newFeatures_queryWebData(void)
 {
-	if (PlaySpanStoreLauncher_NewFeaturesUpdate())
+	/*if (PlaySpanStoreLauncher_NewFeaturesUpdate())
 	{
 		webDataProcess = WEBDATA_WAITING;
 		timeSinceQuery = timerSecondsSince2000();
-	}
+	}*/
 }
 
 void newFeatures_update(void)

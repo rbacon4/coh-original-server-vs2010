@@ -84,7 +84,49 @@
       <PreprocessorDefinitions>BEACONIZER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Opt Debug|Win32'">
+    <ClCompile>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <AdditionalIncludeDirectories>.\script\LuaLibs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lapi.c" />
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lauxlib.c" />
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lbaselib.c" />
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lcode.c" />
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\ldblib.c" />
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\ldebug.c" />
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\ldo.c" />
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\ldump.c" />
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lfunc.c" />
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lgc.c" />
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\linit.c" />
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\liolib.c" />
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\llex.c" />
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lmathlib.c" />
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lmem.c" />
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\loadlib.c" />
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lobject.c" />
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lopcodes.c" />
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\loslib.c" />
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lparser.c" />
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lstate.c" />
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lstring.c" />
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lstrlib.c" />
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\ltable.c" />
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\ltablib.c" />
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\ltm.c" />
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lua.c" />
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\luac.c" />
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lundump.c" />
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lvm.c" />
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\lzio.c" />
+    <ClCompile Include="..\3rdparty\lua-5.1.5\src\print.c" />
+    <ClCompile Include="..\Common\account\AccountTypes.cpp" />
+    <ClCompile Include="..\Common\LWC_common.c" />
+    <ClCompile Include="..\Common\TurnstileCommon.c" />
+    <ClCompile Include="..\Common\TurnstileServerCommon.c" />
     <ClCompile Include="ai\entai.c">
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Beaconizer|Win32'">MaxSpeed</Optimization>
       <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Beaconizer|Win32'">AnySuitable</InlineFunctionExpansion>
@@ -630,7 +672,6 @@
       <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Opt Debug|Win32'">ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <ClCompile Include="..\Common\entity\powers_load.c" />
-    <ClCompile Include="..\AccountServer\product_mapping.c" />
     <ClCompile Include="..\Common\entity\Proficiency.c" />
     <ClCompile Include="..\Common\entity\ragdoll.c" />
     <ClCompile Include="..\Common\entity\RewardItemType.c" />
@@ -716,14 +757,41 @@
     <ClCompile Include="..\Common\gameComm\wdwbase.c" />
     <ClCompile Include="gameComm\automapServer.c" />
     <ClCompile Include="gameComm\gift.c" />
+    <ClCompile Include="gameComm\NewFeatures.c" />
     <ClCompile Include="gameComm\NpcChatter.c" />
     <ClCompile Include="gameComm\NpcNames.c" />
     <ClCompile Include="gameComm\NpcServer.c" />
     <ClCompile Include="gameComm\pet.c" />
+    <ClCompile Include="MARTY.c" />
     <ClCompile Include="Reward.c" />
     <ClCompile Include="gameComm\search.c" />
     <ClCompile Include="gameComm\sendToClient.c" />
     <ClCompile Include="gameComm\svr_chat.c" />
+    <ClCompile Include="script\Encounters\EntityScriptStart.c" />
+    <ClCompile Include="script\LuaLibs\ScriptLuaAI.c" />
+    <ClCompile Include="script\LuaLibs\ScriptLuaCallback.c" />
+    <ClCompile Include="script\LuaLibs\ScriptLuaCommon.c" />
+    <ClCompile Include="script\LuaLibs\ScriptLuaEncounter.c" />
+    <ClCompile Include="script\LuaLibs\ScriptLuaEntity.c" />
+    <ClCompile Include="script\LuaLibs\ScriptLuaGlowie.c" />
+    <ClCompile Include="script\LuaLibs\ScriptLuaKarma.c" />
+    <ClCompile Include="script\LuaLibs\ScriptLuaLocation.c" />
+    <ClCompile Include="script\LuaLibs\ScriptLuaMessage.c" />
+    <ClCompile Include="script\LuaLibs\ScriptLuaMission.c" />
+    <ClCompile Include="script\LuaLibs\ScriptLuaReward.c" />
+    <ClCompile Include="script\LuaLibs\ScriptLuaScript.c" />
+    <ClCompile Include="script\LuaLibs\ScriptLuaTeam.c" />
+    <ClCompile Include="script\LuaLibs\ScriptLuaUI.c" />
+    <ClCompile Include="script\LuaLibs\ScriptLuaVar.c" />
+    <ClCompile Include="script\LuaLibs\ScriptLuaWaypoint.c" />
+    <ClCompile Include="script\Missions\EscortToPlace.c" />
+    <ClCompile Include="script\Missions\HolidayEventMission.c" />
+    <ClCompile Include="script\Missions\MultiLeadToPlace.c" />
+    <ClCompile Include="script\Missions\OnEnterGrantPower.c" />
+    <ClCompile Include="script\Missions\OnEnterObjectiveComplete.c" />
+    <ClCompile Include="script\Missions\SetObjectiveText.c" />
+    <ClCompile Include="script\scriptlua.c" />
+    <ClCompile Include="script\zoneevents\NemesisPlot.c" />
     <ClCompile Include="TeamReward.c" />
     <ClCompile Include="gameComm\trading.c" />
     <ClCompile Include="gameComm\trayServer.c" />
@@ -758,7 +826,6 @@
     <ClCompile Include="..\Common\gameData\sgrpstatsstruct.c" />
     <ClCompile Include="script\Missions\Tether.c" />
     <ClCompile Include="gameSys\Turnstile.c" />
-    <ClCompile Include="..\Common\TurnstileServer\TurnstileCommon.c" />
     <ClCompile Include="zowie.c" />
     <ClCompile Include="..\Common\gameData\BodyPart.c" />
     <ClCompile Include="..\Common\gameData\costume_data.c" />
@@ -1152,7 +1219,6 @@
     <ClCompile Include="script\Missions\CoVThornTree.c" />
     <ClCompile Include="script\TrialRooms\Eden.c" />
     <ClCompile Include="script\TrialRooms\TerraVolta.c" />
-    <ClCompile Include="script\etc\AIScriptPatrolTest.c" />
     <ClCompile Include="script\etc\baseraidscript.c" />
     <ClCompile Include="script\etc\misc.c" />
     <ClCompile Include="script\etc\TestScript.c" />
@@ -1326,6 +1392,33 @@
     <ClCompile Include="..\Common\account\AccountInventory.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lapi.h" />
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lauxlib.h" />
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lcode.h" />
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\ldebug.h" />
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\ldo.h" />
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lfunc.h" />
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lgc.h" />
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\llex.h" />
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\llimits.h" />
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lmem.h" />
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lobject.h" />
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lopcodes.h" />
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lparser.h" />
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lstate.h" />
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lstring.h" />
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\ltable.h" />
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\ltm.h" />
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lua.h" />
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\luaconf.h" />
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lualib.h" />
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lundump.h" />
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lvm.h" />
+    <ClInclude Include="..\3rdparty\lua-5.1.5\src\lzio.h" />
+    <ClInclude Include="..\Common\account\AccountTypes.h" />
+    <ClInclude Include="..\Common\LWC_common.h" />
+    <ClInclude Include="..\Common\TurnstileCommon.h" />
+    <ClInclude Include="..\Common\TurnstileServerCommon.h" />
     <ClInclude Include="ai\entai.h" />
     <ClInclude Include="ai\entaiBehaviorAlias.h" />
     <ClInclude Include="ai\entaibehaviorcoh.h" />
@@ -1335,7 +1428,6 @@
     <ClInclude Include="ai\entaiPriorityPrivate.h" />
     <ClInclude Include="ai\entaiprivate.h" />
     <ClInclude Include="ai\entaiScript.h" />
-    <ClInclude Include="ai\entaiScriptStruct.h" />
     <ClInclude Include="ai\entaivars.h" />
     <ClInclude Include="ai\entaiCritterPrivate.h" />
     <ClInclude Include="beacon\beacon.h" />
@@ -1496,14 +1588,32 @@
     <ClInclude Include="..\Common\gameComm\wdwbase.h" />
     <ClInclude Include="gameComm\automapServer.h" />
     <ClInclude Include="gameComm\gift.h" />
+    <ClInclude Include="gameComm\NewFeatures.h" />
     <ClInclude Include="gameComm\NpcChatter.h" />
     <ClInclude Include="gameComm\NpcNames.h" />
     <ClInclude Include="gameComm\NpcServer.h" />
     <ClInclude Include="gameComm\pet.h" />
+    <ClInclude Include="MARTY.h" />
     <ClInclude Include="Reward.h" />
     <ClInclude Include="gameComm\search.h" />
     <ClInclude Include="gameComm\sendToClient.h" />
     <ClInclude Include="gameComm\svr_chat.h" />
+    <ClInclude Include="script\LuaLibs\ScriptLuaAI.h" />
+    <ClInclude Include="script\LuaLibs\ScriptLuaCallback.h" />
+    <ClInclude Include="script\LuaLibs\ScriptLuaCommon.h" />
+    <ClInclude Include="script\LuaLibs\ScriptLuaEncounter.h" />
+    <ClInclude Include="script\LuaLibs\ScriptLuaEntity.h" />
+    <ClInclude Include="script\LuaLibs\ScriptLuaGlowie.h" />
+    <ClInclude Include="script\LuaLibs\ScriptLuaKarma.h" />
+    <ClInclude Include="script\LuaLibs\ScriptLuaLocation.h" />
+    <ClInclude Include="script\LuaLibs\ScriptLuaMessage.h" />
+    <ClInclude Include="script\LuaLibs\ScriptLuaMission.h" />
+    <ClInclude Include="script\LuaLibs\ScriptLuaReward.h" />
+    <ClInclude Include="script\LuaLibs\ScriptLuaScript.h" />
+    <ClInclude Include="script\LuaLibs\ScriptLuaTeam.h" />
+    <ClInclude Include="script\LuaLibs\ScriptLuaUI.h" />
+    <ClInclude Include="script\LuaLibs\ScriptLuaVar.h" />
+    <ClInclude Include="script\LuaLibs\ScriptLuaWaypoint.h" />
     <ClInclude Include="TeamReward.h" />
     <ClInclude Include="gameComm\trading.h" />
     <ClInclude Include="gameComm\trayServer.h" />
@@ -1535,7 +1645,6 @@
     <ClInclude Include="gameSys\sgraid_V2.h" />
     <ClInclude Include="..\Common\gameData\sgrpstatsstruct.h" />
     <ClInclude Include="gameSys\Turnstile.h" />
-    <ClInclude Include="..\Common\TurnstileServer\TurnstileCommon.h" />
     <ClInclude Include="..\Common\gameData\BodyPart.h" />
     <ClInclude Include="..\Common\gameData\costume_data.h" />
     <ClInclude Include="..\Common\fxbhvr.h" />

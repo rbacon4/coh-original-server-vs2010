@@ -138,6 +138,30 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Opt Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Opt Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Opt Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Opt Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Opt Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Opt Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -155,6 +179,8 @@
     <ClCompile>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <BufferSecurityCheck>false</BufferSecurityCheck>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <AdditionalIncludeDirectories>UtilsNew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Opt Debug|x64'">
@@ -167,6 +193,8 @@
     <ClCompile>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <BufferSecurityCheck>false</BufferSecurityCheck>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <AdditionalIncludeDirectories>UtilsNew;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -176,19 +204,19 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="network\crc32c.cpp" />
+    <ClCompile Include="network\net_profile.c" />
+    <ClCompile Include="UtilsCXX\ringchain.cpp" />
+    <ClCompile Include="UtilsCXX\threadedpoolallocator.cpp" />
     <ClCompile Include="UtilsNew\array.c" />
     <ClCompile Include="UtilsNew\Bits.c" />
-    <ClCompile Include="UtilsNew\fileio.c" />
-    <ClCompile Include="UtilsNew\http.c" />
     <ClCompile Include="UtilsNew\lock.c" />
-    <ClCompile Include="UtilsNew\log.c" />
     <ClCompile Include="UtilsNew\hashfunctions\lookup3.c" />
     <ClCompile Include="UtilsNew\meta.c" />
-    <ClCompile Include="UtilsNew\ncassert.c" />
     <ClCompile Include="UtilsNew\ncHash.cpp" />
     <ClCompile Include="UtilsNew\ncstd.c" />
     <ClCompile Include="UtilsNew\ncutils.cpp" />
-    <ClCompile Include="UtilsNew\net.c" />
+    <ClCompile Include="UtilsNew\ntapiext.c" />
     <ClCompile Include="UtilsNew\profiler.c">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D "_MEMCHECK_H"</AdditionalOptions>
       <WholeProgramOptimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</WholeProgramOptimization>
@@ -213,7 +241,6 @@
     <ClCompile Include="utils\Breakpoint.c" />
     <ClCompile Include="utils\buildVersion.c" />
     <ClCompile Include="utils\cmdoldparse.c" />
-    <ClCompile Include="utils\cmdparse.c" />
     <ClCompile Include="utils\Color.c" />
     <ClCompile Include="utils\CommandFileParser.c" />
     <ClCompile Include="utils\ConsoleDebug.c" />
@@ -315,7 +342,6 @@
     <ClCompile Include="utils\genericDialog.c" />
     <ClCompile Include="utils\hoglib.c" />
     <ClCompile Include="utils\hogutil.c" />
-    <ClCompile Include="utils\http_client.c" />
     <ClCompile Include="utils\LineDist.c" />
     <ClCompile Include="utils\ListView.c" />
     <ClCompile Include="utils\log.c">
@@ -858,7 +884,6 @@
       <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <ClCompile Include="network\net_packetutil.c" />
-    <ClCompile Include="network\net_profile.c" />
     <ClCompile Include="network\net_socket.c">
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
       <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
@@ -1338,7 +1363,6 @@
       <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Default</BasicRuntimeChecks>
       <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ProgramDatabase</DebugInformationFormat>
     </ClCompile>
-    <ClCompile Include="components\Namelist.c" />
     <ClCompile Include="components\Octree.c">
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MaxSpeed</Optimization>
       <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AnySuitable</InlineFunctionExpansion>
@@ -1608,18 +1632,33 @@
     <ClCompile Include="utilitiesLib.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="network\crc32c.h" />
+    <ClInclude Include="UtilsCXX\apcworkerpool.hpp" />
+    <ClInclude Include="UtilsCXX\condition.hpp" />
+    <ClInclude Include="UtilsCXX\criticalsection.hpp" />
+    <ClInclude Include="UtilsCXX\futex.hpp" />
+    <ClInclude Include="UtilsCXX\keyedcondition.hpp" />
+    <ClInclude Include="UtilsCXX\list.hpp" />
+    <ClInclude Include="UtilsCXX\listlist.hpp" />
+    <ClInclude Include="UtilsCXX\lockingworkerpool.hpp" />
+    <ClInclude Include="UtilsCXX\locklessworkerpool.hpp" />
+    <ClInclude Include="UtilsCXX\nullworkerpool.hpp" />
+    <ClInclude Include="UtilsCXX\ring.hpp" />
+    <ClInclude Include="UtilsCXX\ringchain.hpp" />
+    <ClInclude Include="UtilsCXX\semaphoreworkerpool.hpp" />
+    <ClInclude Include="UtilsCXX\sleeplock.hpp" />
+    <ClInclude Include="UtilsCXX\taskthread.hpp" />
+    <ClInclude Include="UtilsCXX\threadedpoolallocator.hpp" />
+    <ClInclude Include="UtilsCXX\workerpoolbase.hpp" />
     <ClInclude Include="UtilsNew\Array.h" />
+    <ClInclude Include="UtilsNew\barrier.h" />
     <ClInclude Include="UtilsNew\Bits.h" />
-    <ClInclude Include="UtilsNew\fileio.h" />
-    <ClInclude Include="UtilsNew\http.h" />
     <ClInclude Include="UtilsNew\lock.h" />
-    <ClInclude Include="UtilsNew\log.h" />
     <ClInclude Include="UtilsNew\meta.h" />
-    <ClInclude Include="UtilsNew\ncassert.h" />
     <ClInclude Include="UtilsNew\ncHash.h" />
     <ClInclude Include="UtilsNew\ncstd.h" />
     <ClInclude Include="UtilsNew\ncutils.h" />
-    <ClInclude Include="UtilsNew\net.h" />
+    <ClInclude Include="UtilsNew\ntapiext.h" />
     <ClInclude Include="UtilsNew\profiler.h" />
     <ClInclude Include="UtilsNew\Str.h" />
     <ClInclude Include="UtilsNew\Stream.h" />
@@ -1627,7 +1666,6 @@
     <ClInclude Include="utils\Breakpoint.h" />
     <ClInclude Include="utils\Cbox.h" />
     <ClInclude Include="utils\cmdoldparse.h" />
-    <ClInclude Include="utils\cmdparse.h" />
     <ClInclude Include="utils\Color.h" />
     <ClInclude Include="utils\CommandFileParser.h" />
     <ClInclude Include="utils\ConsoleDebug.h" />
@@ -1649,7 +1687,6 @@
     <ClInclude Include="utils\genericDialog.h" />
     <ClInclude Include="utils\hoglib.h" />
     <ClInclude Include="utils\hogutil.h" />
-    <ClInclude Include="utils\http_client.h" />
     <ClInclude Include="utils\LineDist.h" />
     <ClInclude Include="utils\ListView.h" />
     <ClInclude Include="utils\log.h" />
@@ -1713,7 +1750,6 @@
     <ClInclude Include="network\net_masterlistref.h" />
     <ClInclude Include="network\net_packet.h" />
     <ClInclude Include="network\net_packetutil.h" />
-    <ClInclude Include="network\net_profile.h" />
     <ClInclude Include="network\net_socket.h" />
     <ClInclude Include="network\net_structdefs.h" />
     <ClInclude Include="network\net_typedefs.h" />
@@ -1754,7 +1790,6 @@
     <ClInclude Include="components\MRUList.h" />
     <ClInclude Include="components\Multival.h" />
     <ClInclude Include="components\NamedBitArray.h" />
-    <ClInclude Include="components\Namelist.h" />
     <ClInclude Include="components\Octree.h" />
     <ClInclude Include="components\PerformanceCounter.h" />
     <ClInclude Include="components\Queue.h" />

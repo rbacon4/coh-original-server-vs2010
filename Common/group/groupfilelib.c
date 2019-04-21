@@ -787,6 +787,7 @@ static int objectLibraryLoadBoundsFileInternal(const char *groupfile_name,U32 ch
 	if (libfile->bounds_checksum == checksum)
 		return 1;
 	boundsFileName(groupfile_name,SAFESTR(boundsname));
+	
 	if (!ParserReadBinaryFile(0, boundsname, parse_lib_desc, &lib_desc, NULL, NULL))
 		return 0;
 	cryptAdler32Init();

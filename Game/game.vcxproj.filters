@@ -146,6 +146,9 @@
     <Filter Include="account">
       <UniqueIdentifier>{efcda36f-fc0e-4fb4-9811-8761f9c53c78}</UniqueIdentifier>
     </Filter>
+    <Filter Include="UI\Hybrid">
+      <UniqueIdentifier>{53a98942-55b8-42ea-8846-99aef45636e8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Common\auth\auth.c">
@@ -1201,9 +1204,6 @@
     <ClCompile Include="UI\uiMMMapViewer.c">
       <Filter>UI\Game</Filter>
     </ClCompile>
-    <ClCompile Include="UI\uiPayment.c">
-      <Filter>UI\Game</Filter>
-    </ClCompile>
     <ClCompile Include="Ui\uiPet.c">
       <Filter>UI\Game</Filter>
     </ClCompile>
@@ -1300,12 +1300,6 @@
     <ClCompile Include="UI\uiAvatar.c">
       <Filter>UI\Menu</Filter>
     </ClCompile>
-    <ClCompile Include="UI\uiCashStore.c">
-      <Filter>UI\Menu</Filter>
-    </ClCompile>
-    <ClCompile Include="UI\uiCharacterCreationNLM.c">
-      <Filter>UI\Menu</Filter>
-    </ClCompile>
     <ClCompile Include="Ui\uiCombineSpec.c">
       <Filter>UI\Menu</Filter>
     </ClCompile>
@@ -1342,9 +1336,6 @@
     <ClCompile Include="Ui\uiOptions.c">
       <Filter>UI\Menu</Filter>
     </ClCompile>
-    <ClCompile Include="UI\uiOriginClass.c">
-      <Filter>UI\Menu</Filter>
-    </ClCompile>
     <ClCompile Include="UI\uiPCCCreationNLM.c">
       <Filter>UI\Menu</Filter>
     </ClCompile>
@@ -1363,9 +1354,6 @@
     <ClCompile Include="UI\uiPowers.c">
       <Filter>UI\Menu</Filter>
     </ClCompile>
-    <ClCompile Include="UI\uiProfile.c">
-      <Filter>UI\Menu</Filter>
-    </ClCompile>
     <ClCompile Include="Ui\uiReSpec.c">
       <Filter>UI\Menu</Filter>
     </ClCompile>
@@ -1379,9 +1367,6 @@
       <Filter>UI\Menu</Filter>
     </ClCompile>
     <ClCompile Include="Ui\uiTailor.c">
-      <Filter>UI\Menu</Filter>
-    </ClCompile>
-    <ClCompile Include="UI\uiTailorNLM.c">
       <Filter>UI\Menu</Filter>
     </ClCompile>
     <ClCompile Include="UI\uiUtilMenu.c">
@@ -1741,9 +1726,6 @@
     <ClCompile Include="..\common\container\dbcontainerpack.c">
       <Filter>container</Filter>
     </ClCompile>
-    <ClCompile Include="..\Common\account\AccountBilling.c">
-      <Filter>account</Filter>
-    </ClCompile>
     <ClCompile Include="..\Common\account\AccountCatalog.c">
       <Filter>account</Filter>
     </ClCompile>
@@ -1751,9 +1733,6 @@
       <Filter>account</Filter>
     </ClCompile>
     <ClCompile Include="..\Common\account\AccountInventory.c">
-      <Filter>account</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Common\account\AccountPayment.c">
       <Filter>account</Filter>
     </ClCompile>
     <ClCompile Include="demo.c" />
@@ -1764,6 +1743,81 @@
     <ClCompile Include="UI\uiChat.c">
       <Filter>UI\Game</Filter>
     </ClCompile>
+    <ClCompile Include="UI\uiConvertEnhancement.c">
+      <Filter>UI\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Hybrid\uiArchetype.c">
+      <Filter>UI\Hybrid</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Hybrid\uiBody.c">
+      <Filter>UI\Hybrid</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Hybrid\uiCostumes.c">
+      <Filter>UI\Hybrid</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Hybrid\uiHybridMenu.c">
+      <Filter>UI\Hybrid</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Hybrid\uiLoyaltyTree.c">
+      <Filter>UI\Hybrid</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Hybrid\uiLoyaltyTreeAccess.c">
+      <Filter>UI\Hybrid</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Hybrid\uiLWC.c">
+      <Filter>UI\Hybrid</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Hybrid\uiMainStoreAccess.c">
+      <Filter>UI\Hybrid</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Hybrid\uiOrigin.c">
+      <Filter>UI\Hybrid</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Hybrid\uiPlaystyle.c">
+      <Filter>UI\Hybrid</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Hybrid\uiPower.c">
+      <Filter>UI\Hybrid</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Hybrid\uiRedirect.c">
+      <Filter>UI\Hybrid</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Hybrid\uiRegister.c">
+      <Filter>UI\Hybrid</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Hybrid\uiWebStoreFrame.c">
+      <Filter>UI\Hybrid</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\uiContactFinder.c">
+      <Filter>UI\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\uiWebBrowser.c">
+      <Filter>UI\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="LWC.c" />
+    <ClCompile Include="UI\uiServerTransfer.c">
+      <Filter>UI\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\entity\character_combat_eval.c">
+      <Filter>entity\common</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\gfxDevHUD.c">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\account\AccountTypes.cpp">
+      <Filter>account</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\uiNewFeatures.c">
+      <Filter>UI\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LWC_common.c" />
+    <ClCompile Include="UI\uiSalvageOpen.c">
+      <Filter>UI\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\camera_detached.c">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="validateFiles.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Common\auth\auth.h">
@@ -2918,9 +2972,6 @@
     <ClInclude Include="UI\uiMMMapViewer.h">
       <Filter>UI\Game</Filter>
     </ClInclude>
-    <ClInclude Include="UI\uiPayment.h">
-      <Filter>UI\Game</Filter>
-    </ClInclude>
     <ClInclude Include="Ui\uiPet.h">
       <Filter>UI\Game</Filter>
     </ClInclude>
@@ -3017,12 +3068,6 @@
     <ClInclude Include="UI\uiAvatar.h">
       <Filter>UI\Menu</Filter>
     </ClInclude>
-    <ClInclude Include="UI\uiCashStore.h">
-      <Filter>UI\Menu</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\uiCharacterCreationNLM.h">
-      <Filter>UI\Menu</Filter>
-    </ClInclude>
     <ClInclude Include="Ui\uiCombineSpec.h">
       <Filter>UI\Menu</Filter>
     </ClInclude>
@@ -3059,9 +3104,6 @@
     <ClInclude Include="Ui\uiOptions.h">
       <Filter>UI\Menu</Filter>
     </ClInclude>
-    <ClInclude Include="UI\uiOriginClass.h">
-      <Filter>UI\Menu</Filter>
-    </ClInclude>
     <ClInclude Include="UI\uiPCCCreationNLM.h">
       <Filter>UI\Menu</Filter>
     </ClInclude>
@@ -3080,9 +3122,6 @@
     <ClInclude Include="UI\uiPowers.h">
       <Filter>UI\Menu</Filter>
     </ClInclude>
-    <ClInclude Include="UI\uiProfile.h">
-      <Filter>UI\Menu</Filter>
-    </ClInclude>
     <ClInclude Include="Ui\uiReSpec.h">
       <Filter>UI\Menu</Filter>
     </ClInclude>
@@ -3096,9 +3135,6 @@
       <Filter>UI\Menu</Filter>
     </ClInclude>
     <ClInclude Include="Ui\uiTailor.h">
-      <Filter>UI\Menu</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\uiTailorNLM.h">
       <Filter>UI\Menu</Filter>
     </ClInclude>
     <ClInclude Include="UI\uiUtilMenu.h">
@@ -3449,9 +3485,6 @@
     <ClInclude Include="..\common\container\dbcontainerpack.h">
       <Filter>container</Filter>
     </ClInclude>
-    <ClInclude Include="..\Common\account\AccountBilling.h">
-      <Filter>account</Filter>
-    </ClInclude>
     <ClInclude Include="..\Common\account\AccountCatalog.h">
       <Filter>account</Filter>
     </ClInclude>
@@ -3461,15 +3494,83 @@
     <ClInclude Include="..\Common\account\AccountInventory.h">
       <Filter>account</Filter>
     </ClInclude>
-    <ClInclude Include="..\Common\account\AccountPayment.h">
-      <Filter>account</Filter>
-    </ClInclude>
     <ClInclude Include="demo.h" />
     <ClInclude Include="game.h" />
     <ClInclude Include="..\Common\player\pophelp.h" />
     <ClInclude Include="UI\uiPopHelp.h" />
     <ClInclude Include="UI\uiChat.h">
       <Filter>UI\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\uiConvertEnhancement.h">
+      <Filter>UI\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Hybrid\uiArchetype.h">
+      <Filter>UI\Hybrid</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Hybrid\uiBody.h">
+      <Filter>UI\Hybrid</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Hybrid\uiCostumes.h">
+      <Filter>UI\Hybrid</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Hybrid\uiHybridMenu.h">
+      <Filter>UI\Hybrid</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Hybrid\uiLoyaltyTree.h">
+      <Filter>UI\Hybrid</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Hybrid\uiLoyaltyTreeAccess.h">
+      <Filter>UI\Hybrid</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Hybrid\uiLWC.h">
+      <Filter>UI\Hybrid</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Hybrid\uiMainStoreAccess.h">
+      <Filter>UI\Hybrid</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Hybrid\uiOrigin.h">
+      <Filter>UI\Hybrid</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Hybrid\uiPlaystyle.h">
+      <Filter>UI\Hybrid</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Hybrid\uiPower.h">
+      <Filter>UI\Hybrid</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Hybrid\uiRedirect.h">
+      <Filter>UI\Hybrid</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Hybrid\uiRegister.h">
+      <Filter>UI\Hybrid</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Hybrid\uiWebStoreFrame.h">
+      <Filter>UI\Hybrid</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\uiContactFinder.h">
+      <Filter>UI\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\uiWebBrowser.h">
+      <Filter>UI\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="LWC.h" />
+    <ClInclude Include="UI\uiServerTransfer.h">
+      <Filter>UI\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\entity\character_combat_eval.h">
+      <Filter>entity\common</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\gfxDevHUD.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\account\AccountTypes.h">
+      <Filter>account</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\uiNewFeatures.h">
+      <Filter>UI\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LWC_common.h" />
+    <ClInclude Include="UI\uiSalvageOpen.h">
+      <Filter>UI\Menu</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

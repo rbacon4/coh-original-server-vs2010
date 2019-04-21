@@ -2744,7 +2744,7 @@ static int displayMenuItem(DebugMenuItem* item, int* line, int left, int x, int 
 	{
 		wchar_t temp[4];
 		sprintf(buffer, "^5");
-		mbtowc(temp, "»", 1);
+		mbtowc(temp, "?", 1);
 		strcat(buffer, WideToUTF8CharConvert(temp[0]));
 	}
 

@@ -4045,23 +4045,23 @@ void storedsalvage_SendMoveToPlayerInv(int amt, char *name) // AmountSliderOKCal
 //----------------------------------------------------
 
 void receiveAccountServerClientAuth(Packet *pak)
-{
+{/*
 #if !defined(TEST_CLIENT)
 
 	U32 timeStamp = pktGetBitsAuto(pak);
 	char * digest = pktGetString(pak);
 	PlaySpanStoreLauncher_SetDigest(timeStamp, digest);
 	memset(digest, 0, strlen(digest));
-#endif
+#endif*/
 }
 
 void receiveAccountServerPlayNCAuthKey(Packet *pak)
-{
+{/*
 #if !defined(TEST_CLIENT)
 	int request_key = pktGetBitsAuto(pak);
 	char * auth_key = pktGetString(pak);
 	PlaySpanStoreLauncher_ReceiveAuthKeyResponse(request_key, auth_key);
-#endif
+#endif*/
 }
 
 void receiveAccountServerNotifyRequest(Packet *pak)

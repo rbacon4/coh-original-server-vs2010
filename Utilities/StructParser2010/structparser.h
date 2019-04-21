@@ -1,7 +1,7 @@
 #ifndef _STRUCTPARSER_H_
 #define _STRUCTPARSER_H_
 
-#include "stdio.h"
+#include <cstdio>
 #include "tokenizer.h"
 #include "windows.h"
 #include "sourceparserbaseclass.h"

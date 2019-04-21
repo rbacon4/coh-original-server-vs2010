@@ -1,4 +1,4 @@
-#include "stdio.h"
+#include <cstdio>
 #include "tokenizer.h"
 #include "assert.h"
 #include "string.h"

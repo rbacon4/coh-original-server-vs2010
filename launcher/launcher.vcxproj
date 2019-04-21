@@ -104,12 +104,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="launcher.c" />
+    <ClCompile Include="monitor.c" />
     <ClCompile Include="performance.c" />
     <ClCompile Include="proclist.c" />
     <ClCompile Include="..\dbserver\servercfg.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="launcher_enum.h" />
+    <ClInclude Include="monitor.h" />
     <ClInclude Include="performance.h" />
     <ClInclude Include="proclist.h" />
     <ClInclude Include="..\dbserver\servercfg.h" />

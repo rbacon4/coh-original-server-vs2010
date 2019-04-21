@@ -121,12 +121,14 @@
   <ItemGroup>
     <ClCompile Include="..\Common\account\AccountData.c" />
     <ClCompile Include="..\Common\ClientLogin\clientcommLogin.c" />
+    <ClCompile Include="BinHeap.c" />
     <ClCompile Include="QueueServer.c" />
     <ClCompile Include="QueueServer_Passthrough.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Common\account\AccountData.h" />
     <ClInclude Include="..\Common\ClientLogin\clientcommLogin.h" />
+    <ClInclude Include="BinHeap.h" />
     <ClInclude Include="QueueServer.h" />
     <ClInclude Include="QueueServer_Passthrough.h" />
   </ItemGroup>

@@ -166,11 +166,11 @@ void BrowserSendSteamAuthSessionTicket(void)
 		// Cancel the old ticket first
 		if (game_state.steamAuthSessionTicketID)
 		{
-			COHSteam_CancelAuthSessionTicket(game_state.steamAuthSessionTicketID);
+			//COHSteam_CancelAuthSessionTicket(game_state.steamAuthSessionTicketID);
 			game_state.steamAuthSessionTicketID = 0;
 		}
 
-		game_state.steamAuthSessionTicketID = COHSteam_GetAuthSessionTicket(steam_auth_ticket, sizeof(steam_auth_ticket), &steam_auth_ticket_len);
+		game_state.steamAuthSessionTicketID = 0;//COHSteam_GetAuthSessionTicket(steam_auth_ticket, sizeof(steam_auth_ticket), &steam_auth_ticket_len);
 
 		if (!game_state.steamAuthSessionTicketID)
 			steam_auth_ticket_len = 0;

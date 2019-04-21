@@ -258,7 +258,7 @@ int main(int argc, char **argv)
 	game_state.launchedFromSteam = game_state.launchedFromSteam || isSteamRegistryKeySet();
 
 	// Check if we were launched from Steam, if so, initialize the Steam SDK
-	if (game_state.launchedFromSteam)
+	/*if (game_state.launchedFromSteam)
 	{
 
 		if (COHSteam_Init())
@@ -298,7 +298,7 @@ int main(int argc, char **argv)
 				}
 			}
 		}
-	}
+	}*/
 
 	//Do after getAutoResumeInfo() so game_state.fullscreen will be correct
 	parseArgs(argc,argv);

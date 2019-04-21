@@ -22,6 +22,9 @@
     <Filter Include="version">
       <UniqueIdentifier>{7f55906a-984a-4511-9aaf-55e86ba970d6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="UtilsCXX">
+      <UniqueIdentifier>{846a42ae-59e6-43df-823a-c7ffb8952612}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="UtilsNew\array.c">
@@ -30,25 +33,13 @@
     <ClCompile Include="UtilsNew\Bits.c">
       <Filter>UtilsNew</Filter>
     </ClCompile>
-    <ClCompile Include="UtilsNew\fileio.c">
-      <Filter>UtilsNew</Filter>
-    </ClCompile>
-    <ClCompile Include="UtilsNew\http.c">
-      <Filter>UtilsNew</Filter>
-    </ClCompile>
     <ClCompile Include="UtilsNew\lock.c">
-      <Filter>UtilsNew</Filter>
-    </ClCompile>
-    <ClCompile Include="UtilsNew\log.c">
       <Filter>UtilsNew</Filter>
     </ClCompile>
     <ClCompile Include="UtilsNew\hashfunctions\lookup3.c">
       <Filter>UtilsNew</Filter>
     </ClCompile>
     <ClCompile Include="UtilsNew\meta.c">
-      <Filter>UtilsNew</Filter>
-    </ClCompile>
-    <ClCompile Include="UtilsNew\ncassert.c">
       <Filter>UtilsNew</Filter>
     </ClCompile>
     <ClCompile Include="UtilsNew\ncHash.cpp">
@@ -58,9 +49,6 @@
       <Filter>UtilsNew</Filter>
     </ClCompile>
     <ClCompile Include="UtilsNew\ncutils.cpp">
-      <Filter>UtilsNew</Filter>
-    </ClCompile>
-    <ClCompile Include="UtilsNew\net.c">
       <Filter>UtilsNew</Filter>
     </ClCompile>
     <ClCompile Include="UtilsNew\profiler.c">
@@ -82,9 +70,6 @@
       <Filter>utils</Filter>
     </ClCompile>
     <ClCompile Include="utils\cmdoldparse.c">
-      <Filter>utils</Filter>
-    </ClCompile>
-    <ClCompile Include="utils\cmdparse.c">
       <Filter>utils</Filter>
     </ClCompile>
     <ClCompile Include="utils\Color.c">
@@ -145,9 +130,6 @@
       <Filter>utils</Filter>
     </ClCompile>
     <ClCompile Include="utils\hogutil.c">
-      <Filter>utils</Filter>
-    </ClCompile>
-    <ClCompile Include="utils\http_client.c">
       <Filter>utils</Filter>
     </ClCompile>
     <ClCompile Include="utils\LineDist.c">
@@ -336,9 +318,6 @@
     <ClCompile Include="network\net_packetutil.c">
       <Filter>network</Filter>
     </ClCompile>
-    <ClCompile Include="network\net_profile.c">
-      <Filter>network</Filter>
-    </ClCompile>
     <ClCompile Include="network\net_socket.c">
       <Filter>network</Filter>
     </ClCompile>
@@ -456,9 +435,6 @@
     <ClCompile Include="components\NamedBitArray.c">
       <Filter>components</Filter>
     </ClCompile>
-    <ClCompile Include="components\Namelist.c">
-      <Filter>components</Filter>
-    </ClCompile>
     <ClCompile Include="components\Octree.c">
       <Filter>components</Filter>
     </ClCompile>
@@ -530,6 +506,21 @@
     </ClCompile>
     <ClCompile Include="utils\cpu_count.c" />
     <ClCompile Include="utilitiesLib.c" />
+    <ClCompile Include="network\net_profile.c">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="network\crc32c.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="UtilsCXX\ringchain.cpp">
+      <Filter>UtilsCXX</Filter>
+    </ClCompile>
+    <ClCompile Include="UtilsCXX\threadedpoolallocator.cpp">
+      <Filter>UtilsCXX</Filter>
+    </ClCompile>
+    <ClCompile Include="UtilsNew\ntapiext.c">
+      <Filter>UtilsNew</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="UtilsNew\Array.h">
@@ -538,22 +529,10 @@
     <ClInclude Include="UtilsNew\Bits.h">
       <Filter>UtilsNew</Filter>
     </ClInclude>
-    <ClInclude Include="UtilsNew\fileio.h">
-      <Filter>UtilsNew</Filter>
-    </ClInclude>
-    <ClInclude Include="UtilsNew\http.h">
-      <Filter>UtilsNew</Filter>
-    </ClInclude>
     <ClInclude Include="UtilsNew\lock.h">
       <Filter>UtilsNew</Filter>
     </ClInclude>
-    <ClInclude Include="UtilsNew\log.h">
-      <Filter>UtilsNew</Filter>
-    </ClInclude>
     <ClInclude Include="UtilsNew\meta.h">
-      <Filter>UtilsNew</Filter>
-    </ClInclude>
-    <ClInclude Include="UtilsNew\ncassert.h">
       <Filter>UtilsNew</Filter>
     </ClInclude>
     <ClInclude Include="UtilsNew\ncHash.h">
@@ -563,9 +542,6 @@
       <Filter>UtilsNew</Filter>
     </ClInclude>
     <ClInclude Include="UtilsNew\ncutils.h">
-      <Filter>UtilsNew</Filter>
-    </ClInclude>
-    <ClInclude Include="UtilsNew\net.h">
       <Filter>UtilsNew</Filter>
     </ClInclude>
     <ClInclude Include="UtilsNew\profiler.h">
@@ -587,9 +563,6 @@
       <Filter>utils</Filter>
     </ClInclude>
     <ClInclude Include="utils\cmdoldparse.h">
-      <Filter>utils</Filter>
-    </ClInclude>
-    <ClInclude Include="utils\cmdparse.h">
       <Filter>utils</Filter>
     </ClInclude>
     <ClInclude Include="utils\Color.h">
@@ -653,9 +626,6 @@
       <Filter>utils</Filter>
     </ClInclude>
     <ClInclude Include="utils\hogutil.h">
-      <Filter>utils</Filter>
-    </ClInclude>
-    <ClInclude Include="utils\http_client.h">
       <Filter>utils</Filter>
     </ClInclude>
     <ClInclude Include="utils\LineDist.h">
@@ -847,9 +817,6 @@
     <ClInclude Include="network\net_packetutil.h">
       <Filter>network</Filter>
     </ClInclude>
-    <ClInclude Include="network\net_profile.h">
-      <Filter>network</Filter>
-    </ClInclude>
     <ClInclude Include="network\net_socket.h">
       <Filter>network</Filter>
     </ClInclude>
@@ -970,9 +937,6 @@
     <ClInclude Include="components\NamedBitArray.h">
       <Filter>components</Filter>
     </ClInclude>
-    <ClInclude Include="components\Namelist.h">
-      <Filter>components</Filter>
-    </ClInclude>
     <ClInclude Include="components\Octree.h">
       <Filter>components</Filter>
     </ClInclude>
@@ -1055,5 +1019,65 @@
     <ClInclude Include="utils\cpu_count.h" />
     <ClInclude Include="stdtypes.h" />
     <ClInclude Include="utilitiesLib.h" />
+    <ClInclude Include="network\crc32c.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilsCXX\apcworkerpool.hpp">
+      <Filter>UtilsCXX</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilsCXX\condition.hpp">
+      <Filter>UtilsCXX</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilsCXX\criticalsection.hpp">
+      <Filter>UtilsCXX</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilsCXX\futex.hpp">
+      <Filter>UtilsCXX</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilsCXX\keyedcondition.hpp">
+      <Filter>UtilsCXX</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilsCXX\list.hpp">
+      <Filter>UtilsCXX</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilsCXX\listlist.hpp">
+      <Filter>UtilsCXX</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilsCXX\lockingworkerpool.hpp">
+      <Filter>UtilsCXX</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilsCXX\locklessworkerpool.hpp">
+      <Filter>UtilsCXX</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilsCXX\nullworkerpool.hpp">
+      <Filter>UtilsCXX</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilsCXX\ring.hpp">
+      <Filter>UtilsCXX</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilsCXX\ringchain.hpp">
+      <Filter>UtilsCXX</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilsCXX\semaphoreworkerpool.hpp">
+      <Filter>UtilsCXX</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilsCXX\sleeplock.hpp">
+      <Filter>UtilsCXX</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilsCXX\taskthread.hpp">
+      <Filter>UtilsCXX</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilsCXX\threadedpoolallocator.hpp">
+      <Filter>UtilsCXX</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilsCXX\workerpoolbase.hpp">
+      <Filter>UtilsCXX</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilsNew\barrier.h">
+      <Filter>UtilsNew</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilsNew\ntapiext.h">
+      <Filter>UtilsNew</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
