@@ -1,4 +1,5 @@
 -Small Compiling tutorial-
+You need Visual Studio 2010 Professional or above. Express will NOT work!
 
 Open and compile 3rdparty\cryptopp\cryptlib2010.sln in all Win32 build configurations
 
